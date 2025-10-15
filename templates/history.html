@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction History</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgb(255, 255, 255);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) { background-color: #f2f2f2; }
+    .low { color: #27ae60; font-weight: bold; }
+    .medium { color: #f1c40f; font-weight: bold; }
+    .high { color: #e74c3c; font-weight: bold; }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: #2980b9;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    a:hover { background: #1c5985; }
+  </style>
+</head>
+<body>
+  <a href="/">← Back to Home</a>
+  <h1>Prediction History</h1>
+
+  {% if records %}
+  <table>
+    <tr>
+      {% for key in records[0].keys() %}
+        <th>{{ key.replace('_', ' ').title() }}</th>
+      {% endfor %}
+    </tr>
+    {% for row in records %}
+      <tr>
+        {% for key, value in row.items() %}
+          {% if key == 'predicted_label' %}
+            <td class="{{ value }}">{{ value|title }}</td>
+          {% else %}
+            <td>{{ value }}</td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+    <p style="text-align:center; color:gray;">No predictions found yet.</p>
+  {% endif %}
+</body>
+</html>

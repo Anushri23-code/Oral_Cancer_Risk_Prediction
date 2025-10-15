@@ -1,0 +1,14 @@
+timestamp,name,age,gender,smoker,alcohol,white_patches,hpv,genetics,chronic_irritation,oral_condition,symptoms_text,predicted_label,predicted_prob
+2025-10-14T21:07:34.118599,ani,35,Male,yes,light,yes,yes,yes,yes,moderate,"bleeding,pain",high,0.9991242532234657
+2025-10-14T21:10:46.064543,anvi,27,Male,yes,light,yes,yes,yes,yes,moderate,"ulcers, bleeding",high,0.9990190287294869
+2025-10-14T21:11:57.199606,Aditya ,27,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9154102237817751
+2025-10-14T21:14:27.557576,rakesh,27,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9154102237817751
+2025-10-14T21:21:15.238040,abhi,35,Male,yes,light,no,yes,no,no,moderate,"pain,bleeding",medium,0.94426625230499
+2025-10-14T21:24:51.169269,anis,29,Male,yes,light,yes,yes,no,yes,moderate,"pain,bleeding",high,0.91544784738061
+2025-10-14T21:34:53.325012,sudi,23,Male,yes,light,yes,yes,yes,yes,moderate,"pain,bleeding",high,0.9990930180103856
+2025-10-15T08:15:25.554923,sus,33,Male,yes,light,yes,no,no,yes,moderate,nothing,medium,0.9122790644777048
+2025-10-15T10:06:29.343514,anb,35,Male,yes,light,yes,yes,yes,yes,moderate,"pain,bleeding",high,0.9991242532234657
+2025-10-15T10:06:57.752254,anb,35,Male,yes,light,yes,yes,yes,yes,moderate,nothing ,high,0.9990560231099561
+2025-10-15T10:07:38.926997,awe,30,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9147297397674161
+2025-10-15T11:05:21.152819,as,27,Male,yes,light,no,no,no,yes,moderate,nothing,medium,0.940526021825737
+2025-10-15T12:58:00.469210,asd,26,Male,yes,light,yes,no,no,yes,moderate,nothing,medium,0.9139004549944882

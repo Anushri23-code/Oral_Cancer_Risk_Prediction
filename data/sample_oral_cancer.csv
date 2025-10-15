@@ -1,0 +1,1001 @@
+name,age,gender,smoker,alcohol,symptoms_text,white_patches,hpv,genetics,chronic_irritation,oral_condition,label
+user_xaji0y,75,Male,no,none,white patch on inner cheek,yes,yes,yes,yes,poor,high
+user_xthv3a,69,Male,no,none,red patch in mouth,yes,no,yes,yes,moderate,medium
+user_d4v30t,80,Female,yes,none,lump in mouth,no,yes,yes,yes,poor,high
+user_ikcidk,58,Female,yes,none,lump in mouth,no,yes,yes,yes,good,high
+user_qj7yhl,67,Male,yes,none,mouth ulcer not healing,no,no,yes,yes,poor,high
+user_5lxo6q,34,Male,yes,none,mouth ulcer not healing,no,no,no,yes,good,medium
+user_sdbdw2,45,Male,no,none,persistent pain in mouth,no,yes,yes,no,poor,medium
+user_mkfazz,80,Male,no,none,lump in mouth,no,yes,yes,no,good,medium
+user_t2tala,77,Female,no,light,mouth ulcer not healing,yes,yes,yes,yes,good,high
+user_039tex,78,Male,yes,heavy,persistent pain in mouth,yes,yes,no,no,poor,high
+user_xpseim,55,Male,no,none,lump in mouth,yes,yes,yes,yes,moderate,high
+user_ciyhe7,54,Female,yes,none,persistent pain in mouth,yes,yes,yes,no,moderate,high
+user_pq0y9d,43,Female,no,none,red patch in mouth,yes,no,yes,no,good,medium
+user_ki7p5t,21,Male,no,heavy,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_hocn9j,68,Female,yes,light,lump in mouth,no,yes,yes,no,good,medium
+user_8ut0cv,50,Male,yes,none,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_e6ivwp,55,Female,no,none,lump in mouth,no,yes,no,no,good,low
+user_ykl1cq,54,Male,yes,none,mouth ulcer not healing,yes,no,yes,yes,moderate,high
+user_kptk93,51,Male,no,none,lump in mouth,yes,yes,no,yes,good,medium
+user_0fkhmy,72,Female,no,none,bleeding from mouth,yes,yes,no,no,good,medium
+user_a1wj0t,45,Male,yes,heavy,lump in mouth,yes,yes,no,yes,moderate,high
+user_el6246,31,Male,no,none,difficulty swallowing,no,yes,yes,yes,good,medium
+user_5a0l72,73,Male,yes,light,white patch on inner cheek,no,yes,no,yes,good,medium
+user_3qk2ia,30,Female,yes,heavy,bleeding from mouth,no,no,no,no,good,medium
+user_e8g8jd,45,Female,no,none,difficulty swallowing,yes,no,yes,no,good,medium
+user_za7tz0,60,Male,no,none,lump in mouth,no,no,yes,no,poor,medium
+user_lookep,78,Female,no,heavy,difficulty swallowing,no,no,yes,no,moderate,medium
+user_h2vlpy,50,Female,no,heavy,lump in mouth,yes,yes,no,no,good,medium
+user_31yiha,33,Female,no,light,persistent pain in mouth,no,yes,no,no,moderate,low
+user_ixa11d,45,Male,yes,heavy,difficulty swallowing,no,yes,yes,yes,moderate,high
+user_eqtul1,46,Female,no,none,red patch in mouth,no,no,no,yes,poor,medium
+user_j1ripz,33,Female,yes,heavy,white patch on inner cheek,yes,yes,yes,no,poor,high
+user_fholqc,71,Female,no,light,lump in mouth,yes,no,no,yes,moderate,medium
+user_ko64t0,69,Male,no,none,persistent pain in mouth,yes,no,no,no,poor,medium
+user_fqewao,54,Male,yes,none,bleeding from mouth,no,yes,yes,no,moderate,medium
+user_lqm5k8,44,Female,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_bbi4wi,48,Male,no,none,lump in mouth,no,no,yes,yes,good,medium
+user_8daly8,43,Male,yes,light,lump in mouth,yes,yes,no,yes,poor,high
+user_2mpnsm,72,Female,no,none,mouth ulcer not healing,no,yes,no,yes,poor,medium
+user_sxw71q,70,Female,yes,none,white patch on inner cheek,no,no,yes,no,poor,medium
+user_vnb4gh,69,Female,yes,heavy,lump in mouth,no,yes,yes,yes,good,high
+user_zr1yxr,68,Male,yes,none,lump in mouth,yes,no,no,no,poor,medium
+user_tp0lzj,34,Male,yes,none,white patch on inner cheek,yes,yes,yes,no,moderate,high
+user_09skdg,32,Female,yes,none,difficulty swallowing,yes,no,yes,yes,poor,high
+user_k7w1da,36,Female,no,none,white patch on inner cheek,no,no,yes,yes,moderate,medium
+user_ruyf38,23,Male,yes,light,difficulty swallowing,yes,no,no,no,moderate,medium
+user_49kwv0,78,Male,no,none,white patch on inner cheek,yes,yes,yes,yes,good,high
+user_aqvkiz,62,Female,yes,none,mouth ulcer not healing,yes,no,yes,yes,poor,high
+user_fjfc2v,70,Female,no,none,mouth ulcer not healing,no,no,no,no,good,low
+user_v60vai,61,Male,no,light,mouth ulcer not healing,yes,yes,no,no,moderate,medium
+user_gvwrdm,39,Female,no,heavy,mouth ulcer not healing,no,no,no,no,poor,medium
+user_bdje15,70,Male,no,none,persistent pain in mouth,yes,yes,no,no,poor,medium
+user_pbjek5,49,Male,yes,light,bleeding from mouth,yes,yes,no,yes,poor,high
+user_oi4e8x,27,Female,no,none,lump in mouth,no,no,no,no,good,low
+user_qfgv0e,22,Female,no,heavy,mouth ulcer not healing,no,yes,no,no,poor,medium
+user_ux5qrl,66,Female,no,none,red patch in mouth,yes,no,yes,no,good,medium
+user_lr6n92,59,Male,no,none,difficulty swallowing,no,yes,no,yes,poor,medium
+user_6af58c,68,Female,yes,light,lump in mouth,yes,no,no,no,poor,medium
+user_z15bcw,76,Female,no,light,persistent pain in mouth,yes,yes,no,yes,poor,high
+user_kblcmp,33,Female,no,light,red patch in mouth,yes,yes,no,yes,moderate,medium
+user_6fqjja,69,Female,no,light,red patch in mouth,yes,no,no,no,poor,medium
+user_8yqk94,24,Male,no,none,mouth ulcer not healing,no,yes,no,no,good,low
+user_uy0bvr,75,Female,no,none,bleeding from mouth,no,yes,yes,no,poor,medium
+user_11yedw,20,Female,no,none,mouth ulcer not healing,yes,yes,no,no,poor,medium
+user_oh25ns,35,Male,yes,light,persistent pain in mouth,no,no,yes,no,good,medium
+user_f84098,69,Female,yes,none,mouth ulcer not healing,yes,no,no,no,poor,medium
+user_nwnyqw,78,Female,no,none,white patch on inner cheek,no,no,no,yes,good,low
+user_bb9eit,42,Female,no,heavy,lump in mouth,no,yes,no,yes,moderate,medium
+user_w7kyhq,33,Female,yes,light,difficulty swallowing,no,yes,no,no,good,medium
+user_883dhx,80,Male,yes,none,red patch in mouth,yes,yes,yes,yes,good,high
+user_lf6a4f,26,Female,no,none,bleeding from mouth,yes,yes,yes,no,good,medium
+user_vajepe,22,Female,no,none,difficulty swallowing,yes,no,yes,yes,poor,high
+user_25sq8c,48,Female,no,none,lump in mouth,no,yes,yes,no,poor,medium
+user_fewvzn,56,Female,no,light,white patch on inner cheek,yes,yes,no,no,good,medium
+user_o3o0ll,34,Female,no,light,persistent pain in mouth,yes,yes,yes,yes,moderate,high
+user_d03uvu,39,Male,no,heavy,bleeding from mouth,no,yes,no,no,moderate,medium
+user_dsfr4m,53,Female,yes,none,red patch in mouth,no,yes,no,yes,good,medium
+user_j17mgf,60,Female,yes,light,white patch on inner cheek,yes,yes,no,no,moderate,medium
+user_mnz1ud,21,Male,yes,light,lump in mouth,yes,no,no,no,moderate,medium
+user_vohsmd,61,Female,no,none,red patch in mouth,no,yes,yes,yes,moderate,medium
+user_811ker,45,Male,yes,none,red patch in mouth,no,yes,no,yes,moderate,medium
+user_a75uuz,44,Female,yes,none,mouth ulcer not healing,yes,no,no,yes,moderate,medium
+user_4ivsol,39,Male,yes,none,difficulty swallowing,yes,yes,no,no,poor,high
+user_8xfdjg,27,Male,yes,light,persistent pain in mouth,no,no,no,no,good,low
+user_pqw2vm,22,Female,no,none,mouth ulcer not healing,no,yes,yes,no,moderate,medium
+user_u80b6u,30,Female,no,none,white patch on inner cheek,no,yes,no,yes,poor,medium
+user_xbz9sv,41,Female,no,none,bleeding from mouth,no,yes,no,yes,moderate,medium
+user_dyk0x6,73,Male,yes,none,red patch in mouth,no,no,no,yes,poor,medium
+user_zduxle,62,Male,no,none,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_m1g9fk,68,Male,no,none,lump in mouth,yes,no,yes,no,good,medium
+user_f313fp,44,Female,no,none,persistent pain in mouth,no,no,yes,yes,moderate,medium
+user_826gyu,46,Female,no,light,difficulty swallowing,no,yes,yes,yes,moderate,medium
+user_brn7zs,25,Female,yes,none,persistent pain in mouth,yes,no,yes,yes,moderate,high
+user_57oonn,23,Female,yes,none,white patch on inner cheek,no,yes,yes,yes,moderate,high
+user_7r31qw,75,Male,yes,none,red patch in mouth,no,yes,no,yes,moderate,medium
+user_eixwc4,49,Male,no,none,lump in mouth,yes,no,no,yes,poor,medium
+user_mugysm,79,Male,no,none,lump in mouth,no,no,no,yes,moderate,low
+user_2m0w10,39,Male,yes,none,bleeding from mouth,yes,no,no,yes,good,medium
+user_c1qkbh,20,Female,no,none,bleeding from mouth,no,no,yes,yes,moderate,medium
+user_m25len,74,Female,no,heavy,persistent pain in mouth,no,yes,no,no,moderate,medium
+user_7s20cv,70,Male,no,none,white patch on inner cheek,no,no,no,no,poor,low
+user_zfpq06,57,Female,yes,heavy,white patch on inner cheek,yes,no,no,yes,good,high
+user_fv2bc2,41,Female,no,none,difficulty swallowing,yes,no,no,no,moderate,low
+user_1utoxi,25,Male,no,none,persistent pain in mouth,yes,no,no,no,good,low
+user_9k6re4,46,Male,no,none,white patch on inner cheek,no,no,yes,no,moderate,low
+user_4z7w2s,25,Male,no,none,persistent pain in mouth,yes,no,no,no,poor,medium
+user_e5cozr,44,Female,no,none,mouth ulcer not healing,yes,no,no,no,good,low
+user_52xg8p,76,Male,no,none,mouth ulcer not healing,yes,yes,no,yes,moderate,medium
+user_8skch8,35,Male,no,light,white patch on inner cheek,yes,yes,yes,no,poor,high
+user_b5c81j,31,Female,no,none,lump in mouth,no,no,no,yes,poor,medium
+user_oqyfoq,39,Male,yes,light,lump in mouth,no,no,yes,no,poor,medium
+user_ulqjid,36,Female,no,none,bleeding from mouth,yes,no,no,yes,good,medium
+user_rsrla8,50,Female,no,none,mouth ulcer not healing,yes,yes,no,no,poor,medium
+user_5xqt4p,74,Female,no,light,mouth ulcer not healing,yes,no,yes,yes,moderate,medium
+user_tcs1k9,61,Male,yes,none,mouth ulcer not healing,no,no,yes,yes,poor,high
+user_ssbelr,47,Male,no,none,mouth ulcer not healing,no,yes,no,no,poor,medium
+user_m3tzk3,41,Female,no,heavy,difficulty swallowing,no,yes,no,no,poor,medium
+user_21uzvg,58,Female,yes,light,white patch on inner cheek,yes,yes,yes,no,moderate,high
+user_pohswq,72,Male,no,none,difficulty swallowing,no,no,no,no,good,low
+user_qtty5y,69,Female,no,none,red patch in mouth,no,no,yes,no,moderate,low
+user_zyrru7,64,Female,yes,none,difficulty swallowing,no,no,no,yes,moderate,medium
+user_b8c7x0,31,Male,no,none,difficulty swallowing,no,yes,yes,yes,good,medium
+user_b6iidl,48,Male,no,none,difficulty swallowing,yes,no,no,no,poor,medium
+user_h8lx6d,54,Male,no,light,white patch on inner cheek,yes,no,yes,yes,moderate,medium
+user_2g05kb,37,Male,no,none,persistent pain in mouth,no,yes,no,no,good,low
+user_3l0xza,39,Female,no,light,red patch in mouth,no,no,no,yes,moderate,low
+user_ygflij,33,Female,no,heavy,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_yqfy75,67,Female,no,light,mouth ulcer not healing,no,yes,yes,yes,moderate,medium
+user_f0votq,52,Male,no,light,difficulty swallowing,yes,no,no,yes,poor,medium
+user_e36htf,72,Female,yes,none,difficulty swallowing,no,yes,no,yes,moderate,medium
+user_eouuyl,19,Female,yes,none,red patch in mouth,yes,yes,no,no,poor,high
+user_c97c7b,44,Male,no,light,lump in mouth,no,no,no,no,moderate,low
+user_nyxtxm,29,Female,no,light,red patch in mouth,yes,yes,no,no,poor,medium
+user_zpniqf,30,Male,yes,light,difficulty swallowing,yes,yes,yes,yes,good,high
+user_vqy5ib,46,Male,no,light,bleeding from mouth,yes,yes,no,yes,poor,high
+user_uu13i5,60,Male,no,none,difficulty swallowing,yes,no,no,yes,moderate,medium
+user_7y2lof,42,Male,no,none,bleeding from mouth,yes,no,yes,no,good,medium
+user_u8ueih,59,Male,no,light,white patch on inner cheek,yes,yes,no,no,poor,medium
+user_vbc2vy,31,Female,yes,heavy,mouth ulcer not healing,yes,yes,yes,yes,poor,high
+user_9rivh6,53,Female,no,none,difficulty swallowing,no,no,no,no,poor,low
+user_5q201l,31,Female,yes,none,bleeding from mouth,yes,yes,yes,no,poor,high
+user_7upfln,71,Male,no,light,lump in mouth,no,no,no,no,moderate,low
+user_g2gzr7,52,Male,no,light,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_izasnw,60,Female,no,none,difficulty swallowing,no,yes,yes,no,poor,medium
+user_9a3y36,24,Male,no,none,difficulty swallowing,no,no,no,no,good,low
+user_nou9iy,72,Male,no,heavy,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_tcagrp,68,Female,no,heavy,white patch on inner cheek,yes,yes,yes,no,moderate,high
+user_bc76ub,77,Female,yes,none,red patch in mouth,no,yes,no,yes,poor,high
+user_i4o6l1,26,Male,no,heavy,white patch on inner cheek,yes,no,yes,yes,moderate,high
+user_vwv8lw,68,Female,no,none,persistent pain in mouth,no,yes,no,yes,poor,medium
+user_kicjn2,27,Female,yes,none,white patch on inner cheek,no,no,no,no,good,low
+user_egqtoa,40,Male,no,light,bleeding from mouth,no,yes,no,no,moderate,low
+user_20u9is,61,Female,yes,none,mouth ulcer not healing,no,yes,yes,yes,moderate,high
+user_jk2n7z,49,Male,no,none,white patch on inner cheek,no,no,no,no,moderate,low
+user_m349el,78,Male,no,none,persistent pain in mouth,no,no,no,yes,moderate,low
+user_n3oeuv,52,Male,no,none,lump in mouth,no,yes,no,no,poor,medium
+user_c42yfk,34,Male,no,light,white patch on inner cheek,no,no,no,no,poor,low
+user_b8z3v6,24,Male,no,none,lump in mouth,yes,no,no,no,good,low
+user_ajssuu,46,Female,no,light,difficulty swallowing,yes,no,yes,no,good,medium
+user_k7d30m,39,Female,no,none,mouth ulcer not healing,no,yes,no,no,moderate,low
+user_cbzamd,69,Male,no,light,difficulty swallowing,yes,yes,no,no,moderate,medium
+user_iogxpb,57,Male,no,none,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_d5glqj,73,Female,no,light,difficulty swallowing,no,no,yes,no,moderate,low
+user_4w3zkw,23,Male,yes,none,white patch on inner cheek,yes,no,yes,no,moderate,medium
+user_vuprt7,77,Male,no,none,red patch in mouth,yes,no,no,yes,moderate,medium
+user_8rhnux,44,Female,no,light,persistent pain in mouth,yes,yes,yes,yes,moderate,high
+user_bik2u1,49,Male,no,none,difficulty swallowing,no,yes,no,yes,moderate,medium
+user_d31k9q,40,Male,no,heavy,bleeding from mouth,yes,yes,no,no,good,medium
+user_w232ut,56,Male,yes,light,mouth ulcer not healing,no,yes,yes,no,good,medium
+user_95e5iz,71,Male,no,light,persistent pain in mouth,yes,no,no,no,moderate,low
+user_c21o0z,74,Female,no,none,difficulty swallowing,yes,yes,no,no,good,medium
+user_2o83rl,36,Female,no,none,bleeding from mouth,no,no,yes,yes,good,medium
+user_w4a7fq,79,Female,yes,light,red patch in mouth,no,yes,no,yes,poor,high
+user_mcxxbw,64,Male,no,none,white patch on inner cheek,yes,yes,no,yes,good,medium
+user_vsqame,73,Female,no,none,red patch in mouth,no,yes,yes,yes,moderate,medium
+user_nkn35x,61,Male,yes,none,difficulty swallowing,yes,no,no,yes,poor,high
+user_07wph6,26,Male,no,none,persistent pain in mouth,no,yes,yes,no,poor,medium
+user_dtvv2y,72,Female,yes,light,red patch in mouth,no,no,yes,yes,moderate,medium
+user_niwc5a,41,Female,yes,heavy,difficulty swallowing,no,no,yes,no,good,medium
+user_acjbc2,50,Female,no,none,persistent pain in mouth,no,no,yes,yes,moderate,medium
+user_dc79fl,55,Male,yes,none,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_ewbxxg,18,Male,no,none,mouth ulcer not healing,no,yes,no,yes,poor,medium
+user_2j51b3,35,Male,yes,heavy,lump in mouth,yes,no,no,no,good,medium
+user_runjdu,64,Male,yes,none,white patch on inner cheek,yes,yes,yes,no,moderate,high
+user_nf74t6,65,Female,yes,none,lump in mouth,no,no,yes,no,good,medium
+user_s6g298,22,Female,no,light,mouth ulcer not healing,no,yes,no,yes,moderate,medium
+user_hukwqv,49,Male,no,none,bleeding from mouth,yes,yes,yes,no,good,medium
+user_im458a,60,Female,no,light,white patch on inner cheek,yes,yes,no,no,good,medium
+user_9fkbi4,44,Female,no,light,difficulty swallowing,yes,yes,no,yes,poor,high
+user_up8ijl,69,Female,no,light,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_e1ddql,25,Female,no,none,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_3kzvh4,27,Male,no,heavy,persistent pain in mouth,yes,no,no,yes,good,medium
+user_84utdd,68,Male,yes,none,bleeding from mouth,yes,yes,yes,no,moderate,high
+user_y7dv7c,22,Male,no,none,red patch in mouth,yes,no,yes,yes,moderate,medium
+user_b7p0rn,45,Male,no,heavy,mouth ulcer not healing,no,no,yes,yes,poor,high
+user_wikotc,35,Female,yes,none,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_tr6sng,38,Male,yes,light,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_dxj37c,78,Male,no,heavy,persistent pain in mouth,no,yes,yes,yes,poor,high
+user_l0mvzm,54,Male,no,none,bleeding from mouth,no,no,yes,no,good,low
+user_dihsa7,30,Male,yes,none,bleeding from mouth,no,yes,yes,yes,poor,high
+user_zfdsnc,63,Female,no,none,mouth ulcer not healing,yes,yes,no,no,poor,medium
+user_lzu6wm,60,Male,no,light,mouth ulcer not healing,yes,yes,yes,no,poor,high
+user_bv78hu,77,Female,yes,light,red patch in mouth,no,no,yes,yes,poor,high
+user_y0mahy,40,Female,no,light,white patch on inner cheek,no,no,no,yes,moderate,low
+user_rntdr5,59,Male,yes,none,bleeding from mouth,yes,no,yes,no,moderate,medium
+user_8cgn0t,75,Male,yes,heavy,persistent pain in mouth,yes,no,yes,no,good,high
+user_bl9ot7,52,Female,no,none,white patch on inner cheek,yes,no,no,yes,good,medium
+user_mpkxvh,19,Male,yes,none,white patch on inner cheek,no,yes,no,no,moderate,medium
+user_rxdtg5,41,Male,no,none,persistent pain in mouth,no,yes,no,yes,good,medium
+user_1ydmt8,55,Male,no,light,bleeding from mouth,no,no,yes,no,moderate,low
+user_c6zs62,61,Male,yes,light,red patch in mouth,yes,yes,yes,yes,good,high
+user_p9p9w4,34,Female,no,heavy,white patch on inner cheek,yes,no,no,no,moderate,medium
+user_s7azv2,25,Female,yes,none,difficulty swallowing,yes,yes,yes,no,poor,high
+user_55jxur,29,Female,no,light,lump in mouth,no,yes,no,no,poor,medium
+user_i076a3,37,Female,yes,none,lump in mouth,yes,yes,yes,no,poor,high
+user_p3jpxg,31,Female,no,light,bleeding from mouth,no,yes,yes,yes,moderate,medium
+user_zo2sug,74,Male,no,none,persistent pain in mouth,yes,no,yes,no,moderate,medium
+user_3swebn,56,Female,yes,heavy,difficulty swallowing,no,no,yes,no,poor,high
+user_3dab42,31,Male,no,light,mouth ulcer not healing,no,yes,yes,no,good,medium
+user_xvaj2k,79,Female,no,none,mouth ulcer not healing,no,no,yes,no,moderate,low
+user_y3odsx,71,Female,no,none,mouth ulcer not healing,no,yes,no,yes,moderate,medium
+user_9x5jz6,37,Male,yes,light,white patch on inner cheek,no,no,yes,yes,poor,high
+user_rk6o0u,54,Male,yes,light,lump in mouth,no,no,no,yes,poor,medium
+user_5gdej3,66,Male,no,heavy,lump in mouth,yes,yes,no,yes,poor,high
+user_5p5nvq,25,Female,yes,light,difficulty swallowing,yes,no,yes,yes,poor,high
+user_nkb4eh,44,Female,yes,heavy,red patch in mouth,yes,no,no,yes,moderate,high
+user_waj1g1,49,Male,yes,none,persistent pain in mouth,no,no,no,no,good,low
+user_bhnal3,30,Male,no,light,red patch in mouth,yes,no,no,yes,good,medium
+user_nvg3kk,64,Female,no,light,red patch in mouth,no,no,no,yes,good,low
+user_87oi0e,64,Male,no,none,mouth ulcer not healing,yes,no,no,yes,poor,medium
+user_9xxayp,42,Male,no,none,red patch in mouth,yes,yes,no,no,poor,medium
+user_dswzp6,50,Male,yes,light,persistent pain in mouth,yes,yes,no,yes,moderate,high
+user_zkbrh7,39,Male,yes,light,white patch on inner cheek,no,yes,yes,yes,poor,high
+user_06xq9j,21,Male,no,heavy,bleeding from mouth,no,no,no,no,poor,medium
+user_e46aex,39,Female,no,heavy,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_o8jn42,59,Male,yes,light,white patch on inner cheek,yes,yes,no,no,poor,high
+user_ygnmby,71,Male,no,none,persistent pain in mouth,no,yes,yes,no,poor,medium
+user_lzy1uu,80,Female,no,light,difficulty swallowing,yes,no,yes,no,moderate,medium
+user_xxf36w,18,Male,no,none,persistent pain in mouth,yes,yes,no,no,good,medium
+user_lkstn3,23,Female,no,none,white patch on inner cheek,no,no,no,yes,moderate,low
+user_0aobt3,68,Female,no,none,lump in mouth,no,no,no,yes,good,low
+user_4l1vzn,46,Male,yes,light,white patch on inner cheek,no,no,no,no,poor,medium
+user_d6r30o,34,Male,yes,heavy,persistent pain in mouth,yes,no,yes,no,good,high
+user_1bwye6,47,Male,no,none,lump in mouth,yes,no,no,yes,poor,medium
+user_u0env5,50,Female,no,light,lump in mouth,yes,no,no,no,moderate,low
+user_qeoz0k,62,Female,no,heavy,lump in mouth,yes,yes,yes,no,poor,high
+user_my9x8s,62,Female,no,light,difficulty swallowing,no,no,no,no,good,low
+user_safyh1,28,Female,no,none,white patch on inner cheek,no,yes,yes,no,moderate,medium
+user_d5050u,33,Female,no,none,persistent pain in mouth,no,no,no,yes,good,low
+user_0h54pi,58,Female,no,none,difficulty swallowing,yes,yes,no,no,good,medium
+user_9c80eb,35,Female,yes,none,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_flb7wx,49,Female,yes,light,difficulty swallowing,yes,yes,yes,yes,moderate,high
+user_tom5xl,36,Male,no,light,persistent pain in mouth,yes,yes,no,no,good,medium
+user_6ww8yl,76,Male,no,none,mouth ulcer not healing,yes,no,no,no,good,low
+user_kxlcd8,67,Male,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_350p3c,61,Male,yes,light,white patch on inner cheek,yes,yes,yes,yes,moderate,high
+user_uuijnw,45,Female,yes,light,difficulty swallowing,yes,yes,yes,yes,moderate,high
+user_7d2kd1,46,Female,no,light,persistent pain in mouth,yes,yes,yes,no,poor,high
+user_kwk585,59,Female,no,none,bleeding from mouth,yes,yes,yes,yes,poor,high
+user_vt8k06,40,Male,no,light,difficulty swallowing,yes,yes,yes,yes,poor,high
+user_4gg244,77,Female,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_u8myik,22,Male,yes,none,difficulty swallowing,no,yes,no,no,moderate,medium
+user_gl2zxj,41,Male,no,none,persistent pain in mouth,no,no,no,no,moderate,low
+user_tgv44f,52,Male,yes,heavy,white patch on inner cheek,yes,yes,yes,no,poor,high
+user_hbj6tx,27,Female,no,heavy,difficulty swallowing,no,yes,no,yes,moderate,medium
+user_nai89y,66,Male,no,none,difficulty swallowing,yes,no,no,yes,good,medium
+user_1ijiys,68,Female,no,heavy,white patch on inner cheek,yes,no,yes,no,poor,high
+user_jtgxnx,71,Male,no,none,red patch in mouth,no,no,no,no,moderate,low
+user_5a5pis,35,Male,yes,none,difficulty swallowing,yes,yes,no,no,poor,high
+user_eyrvxo,33,Male,yes,none,red patch in mouth,yes,yes,yes,yes,moderate,high
+user_7so8w5,64,Female,no,none,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_v23gxj,64,Female,no,none,white patch on inner cheek,yes,no,no,yes,good,medium
+user_as6y3v,29,Female,no,none,bleeding from mouth,yes,yes,no,yes,poor,high
+user_ta7ypp,73,Male,no,none,bleeding from mouth,no,no,no,yes,moderate,low
+user_eri4k5,44,Female,yes,light,bleeding from mouth,yes,yes,yes,no,poor,high
+user_h2odpv,34,Female,no,light,lump in mouth,no,yes,no,no,good,low
+user_ntjlmz,65,Male,no,light,lump in mouth,yes,no,yes,yes,good,medium
+user_s22wyb,42,Male,no,light,persistent pain in mouth,no,yes,yes,no,good,medium
+user_nv07ox,36,Male,no,light,lump in mouth,no,no,yes,yes,poor,medium
+user_7sh2sz,57,Male,no,none,lump in mouth,yes,yes,yes,no,moderate,medium
+user_movs0c,23,Female,no,none,difficulty swallowing,no,no,no,yes,poor,medium
+user_8qoags,53,Male,no,none,white patch on inner cheek,no,no,no,no,poor,low
+user_rim1y6,73,Male,no,none,persistent pain in mouth,yes,yes,no,no,moderate,medium
+user_sa3idy,70,Female,yes,heavy,persistent pain in mouth,no,no,yes,no,good,medium
+user_8y6rh0,73,Female,yes,none,red patch in mouth,no,yes,yes,yes,good,high
+user_yxw1tb,48,Female,no,none,difficulty swallowing,no,no,yes,no,moderate,low
+user_hub2rt,50,Female,no,light,red patch in mouth,no,yes,no,no,poor,medium
+user_ayndn5,29,Female,yes,none,difficulty swallowing,no,no,yes,no,moderate,medium
+user_hzn4kg,26,Male,no,light,bleeding from mouth,yes,no,no,yes,good,medium
+user_20rape,75,Female,no,none,difficulty swallowing,yes,no,yes,yes,good,medium
+user_hj4d0j,41,Female,yes,none,mouth ulcer not healing,yes,yes,no,no,moderate,medium
+user_yr06nk,58,Male,no,light,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_mlxzvo,74,Female,no,heavy,lump in mouth,no,no,yes,yes,good,medium
+user_eij00h,43,Male,yes,heavy,persistent pain in mouth,yes,yes,no,yes,good,high
+user_jfx5li,36,Female,no,none,bleeding from mouth,yes,yes,yes,no,moderate,medium
+user_5q57te,78,Male,no,none,lump in mouth,no,no,no,no,poor,low
+user_idlofa,51,Male,yes,none,white patch on inner cheek,no,no,no,yes,moderate,medium
+user_2v2tg5,45,Female,yes,light,lump in mouth,no,no,yes,no,good,medium
+user_pi163y,36,Female,no,heavy,red patch in mouth,yes,no,yes,no,poor,high
+user_qzrlf8,19,Male,no,none,red patch in mouth,no,yes,yes,yes,good,medium
+user_ahp2rn,62,Male,yes,light,red patch in mouth,yes,no,no,yes,poor,high
+user_qg433e,67,Male,no,heavy,red patch in mouth,yes,yes,no,yes,poor,high
+user_xho87f,64,Male,no,none,white patch on inner cheek,no,no,no,yes,moderate,low
+user_55hewl,28,Female,no,none,red patch in mouth,yes,yes,no,yes,moderate,medium
+user_1irym8,66,Male,yes,light,lump in mouth,yes,yes,no,yes,moderate,high
+user_9212pg,62,Female,no,none,white patch on inner cheek,no,no,no,no,good,low
+user_utlq5v,73,Male,yes,none,mouth ulcer not healing,no,no,no,yes,poor,medium
+user_s05wnw,38,Male,no,none,persistent pain in mouth,yes,no,yes,no,moderate,medium
+user_oldxb7,29,Male,yes,none,white patch on inner cheek,yes,no,no,no,good,medium
+user_nvc7hr,74,Male,no,light,mouth ulcer not healing,no,no,yes,no,poor,medium
+user_bck88d,64,Male,no,none,difficulty swallowing,yes,yes,no,yes,poor,high
+user_uyzpd2,53,Female,no,light,difficulty swallowing,no,no,no,no,moderate,low
+user_ow3lit,42,Female,no,none,persistent pain in mouth,yes,yes,no,yes,poor,high
+user_e6a9hl,67,Female,no,none,difficulty swallowing,yes,yes,yes,no,moderate,medium
+user_fj6ijk,54,Female,no,none,white patch on inner cheek,no,no,yes,no,poor,medium
+user_z3dxb3,42,Male,no,heavy,mouth ulcer not healing,no,no,no,yes,good,medium
+user_047wwb,51,Male,yes,none,mouth ulcer not healing,yes,yes,yes,no,moderate,high
+user_1udp2f,39,Male,no,light,difficulty swallowing,no,no,yes,no,poor,medium
+user_pz1rho,54,Male,no,heavy,difficulty swallowing,yes,yes,yes,no,moderate,high
+user_l7dypm,38,Female,no,none,mouth ulcer not healing,yes,no,no,yes,moderate,medium
+user_b3hn14,25,Male,yes,light,red patch in mouth,no,yes,no,yes,moderate,medium
+user_qahths,34,Female,no,heavy,lump in mouth,yes,no,yes,no,good,medium
+user_chzjq8,22,Female,no,light,lump in mouth,no,yes,yes,no,poor,medium
+user_n9sz6r,56,Male,yes,none,persistent pain in mouth,yes,yes,yes,no,moderate,high
+user_r0aymk,80,Female,no,light,persistent pain in mouth,yes,no,yes,yes,moderate,medium
+user_6xdn8w,58,Male,no,none,persistent pain in mouth,no,no,no,yes,good,low
+user_xuyhey,75,Male,no,heavy,bleeding from mouth,yes,yes,no,yes,poor,high
+user_tzg4fb,38,Female,no,none,lump in mouth,no,yes,yes,yes,good,medium
+user_g1wjui,32,Male,no,none,lump in mouth,no,yes,no,no,good,low
+user_4regb1,18,Female,no,none,lump in mouth,yes,yes,yes,yes,moderate,high
+user_5rlqio,20,Female,no,none,lump in mouth,yes,yes,no,no,good,medium
+user_5it9bn,66,Male,yes,none,mouth ulcer not healing,no,no,yes,no,moderate,medium
+user_wbsf3q,64,Male,yes,none,lump in mouth,yes,no,no,no,moderate,medium
+user_aq665d,38,Male,no,none,white patch on inner cheek,no,no,yes,no,poor,medium
+user_2s8nn1,76,Female,no,light,red patch in mouth,yes,yes,yes,yes,moderate,high
+user_l08kg6,79,Male,yes,light,white patch on inner cheek,no,no,no,yes,poor,medium
+user_5ivroc,56,Male,yes,none,difficulty swallowing,yes,yes,yes,yes,good,high
+user_xb4y4k,76,Male,yes,none,red patch in mouth,yes,no,yes,no,poor,high
+user_u7dknn,22,Female,no,none,persistent pain in mouth,yes,yes,no,no,poor,medium
+user_ohhcu9,51,Male,no,light,bleeding from mouth,no,no,no,no,poor,low
+user_uw7wr0,49,Female,no,heavy,red patch in mouth,no,yes,yes,yes,good,high
+user_q20hwo,20,Female,yes,light,red patch in mouth,yes,yes,no,no,good,medium
+user_lslaym,64,Male,no,none,bleeding from mouth,no,no,no,yes,poor,medium
+user_efq56q,70,Female,no,none,difficulty swallowing,no,no,yes,yes,poor,medium
+user_y25m8k,19,Female,no,light,bleeding from mouth,yes,no,yes,yes,moderate,medium
+user_zlbori,46,Female,yes,none,white patch on inner cheek,no,yes,yes,yes,moderate,high
+user_s26fmr,73,Female,no,none,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_n5elb4,73,Male,yes,heavy,white patch on inner cheek,no,yes,no,yes,moderate,high
+user_hkt1yj,28,Female,yes,heavy,difficulty swallowing,yes,yes,no,no,moderate,high
+user_fzkicw,39,Female,yes,none,lump in mouth,yes,yes,no,yes,good,high
+user_pgvv4z,57,Female,yes,light,lump in mouth,yes,no,yes,yes,poor,high
+user_qqyzqi,32,Male,no,light,mouth ulcer not healing,no,yes,no,no,moderate,low
+user_rcer4k,40,Male,no,none,lump in mouth,yes,no,yes,no,poor,medium
+user_qviifr,22,Female,yes,light,persistent pain in mouth,no,no,yes,yes,poor,high
+user_y0z4ev,38,Male,no,none,persistent pain in mouth,yes,yes,no,no,moderate,medium
+user_xchfu1,69,Male,no,light,persistent pain in mouth,no,no,no,yes,good,low
+user_ylu6k7,45,Female,no,none,difficulty swallowing,no,yes,no,yes,moderate,medium
+user_68au9d,36,Male,yes,light,persistent pain in mouth,no,no,no,no,moderate,low
+user_txrgn7,71,Female,yes,heavy,lump in mouth,yes,yes,yes,yes,poor,high
+user_azrp9d,59,Female,no,heavy,lump in mouth,no,yes,no,no,poor,medium
+user_3nipar,64,Male,no,none,difficulty swallowing,no,yes,yes,no,poor,medium
+user_nu8c0s,72,Female,no,none,difficulty swallowing,yes,yes,no,yes,poor,high
+user_w2lbm2,48,Female,no,none,lump in mouth,no,no,no,no,moderate,low
+user_gzvk2j,58,Female,no,none,lump in mouth,no,yes,no,no,good,low
+user_ec2jwj,34,Male,no,light,difficulty swallowing,yes,no,no,yes,moderate,medium
+user_2igsb9,79,Male,no,light,bleeding from mouth,no,no,no,yes,poor,medium
+user_pwh0mx,66,Male,yes,none,persistent pain in mouth,no,no,yes,no,poor,medium
+user_zrf5a7,46,Female,no,heavy,lump in mouth,yes,yes,no,no,poor,high
+user_74mjdx,43,Female,no,light,lump in mouth,yes,no,yes,no,poor,medium
+user_aacosy,40,Male,no,none,white patch on inner cheek,yes,yes,yes,yes,poor,high
+user_wze4ex,75,Male,no,light,mouth ulcer not healing,no,no,yes,no,moderate,low
+user_1yy1j2,35,Male,no,none,white patch on inner cheek,no,no,yes,no,good,low
+user_r7vgrf,67,Female,yes,light,persistent pain in mouth,no,yes,yes,yes,good,high
+user_ujq6fx,77,Male,no,none,lump in mouth,no,no,yes,no,moderate,low
+user_p422ta,79,Female,yes,none,mouth ulcer not healing,no,no,no,yes,poor,medium
+user_9xn4m4,66,Female,no,none,white patch on inner cheek,no,yes,no,no,good,low
+user_wmdw0f,30,Male,no,none,persistent pain in mouth,no,yes,no,no,poor,medium
+user_838amm,64,Male,no,none,lump in mouth,no,yes,yes,yes,good,medium
+user_0ra6wi,59,Male,yes,light,mouth ulcer not healing,yes,no,yes,yes,good,high
+user_evwchm,71,Female,yes,heavy,difficulty swallowing,yes,no,yes,yes,poor,high
+user_gcj1gn,28,Female,yes,none,red patch in mouth,yes,no,yes,yes,moderate,high
+user_ca7zvk,62,Female,no,none,lump in mouth,no,no,no,yes,good,low
+user_vbgr8w,68,Female,yes,none,red patch in mouth,yes,yes,yes,no,poor,high
+user_sqwhbe,27,Female,no,none,white patch on inner cheek,yes,no,no,yes,moderate,medium
+user_jw6qdb,52,Male,yes,none,difficulty swallowing,yes,yes,yes,no,poor,high
+user_up06id,32,Male,yes,none,red patch in mouth,no,yes,yes,no,poor,high
+user_r6f7qn,26,Female,no,light,mouth ulcer not healing,yes,no,yes,yes,poor,high
+user_ukdqp1,32,Female,no,light,lump in mouth,yes,yes,yes,no,poor,high
+user_r9v4k0,65,Male,yes,none,red patch in mouth,yes,yes,no,yes,good,high
+user_90spo3,62,Male,no,none,difficulty swallowing,yes,no,yes,yes,moderate,medium
+user_kxdrkz,72,Male,no,none,red patch in mouth,no,yes,no,no,poor,medium
+user_w4c6lb,45,Female,no,light,difficulty swallowing,yes,yes,no,yes,poor,high
+user_8y5dnw,41,Female,yes,none,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_er7u8h,65,Male,yes,heavy,difficulty swallowing,no,no,yes,yes,moderate,high
+user_mrsezy,52,Female,no,none,lump in mouth,yes,yes,no,yes,good,medium
+user_og8cfe,27,Female,yes,none,lump in mouth,yes,no,no,yes,moderate,medium
+user_mpxkc5,32,Female,no,none,lump in mouth,no,no,no,no,moderate,low
+user_u6l2in,36,Male,yes,none,red patch in mouth,yes,no,yes,yes,poor,high
+user_yxfibl,26,Female,yes,none,difficulty swallowing,yes,no,no,yes,moderate,medium
+user_q9tea7,67,Male,no,heavy,red patch in mouth,yes,no,no,no,moderate,medium
+user_819y20,77,Female,yes,none,persistent pain in mouth,yes,yes,yes,no,good,high
+user_o4qdbx,55,Male,no,light,red patch in mouth,yes,yes,no,yes,poor,high
+user_orvscy,43,Male,no,none,persistent pain in mouth,no,yes,no,no,moderate,low
+user_lquh50,44,Female,yes,light,persistent pain in mouth,no,yes,yes,yes,good,high
+user_k9sm7v,42,Male,yes,light,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_gntb34,37,Female,no,none,white patch on inner cheek,yes,yes,no,no,poor,medium
+user_4rx6pr,62,Male,yes,light,persistent pain in mouth,yes,no,no,no,moderate,medium
+user_wryesu,72,Female,yes,none,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_jp6mkt,77,Male,no,light,red patch in mouth,yes,yes,no,no,poor,medium
+user_2jzntm,27,Male,yes,none,bleeding from mouth,no,no,no,yes,good,medium
+user_hs32uy,78,Male,no,heavy,white patch on inner cheek,yes,yes,no,no,moderate,medium
+user_yfp9s8,29,Female,yes,light,red patch in mouth,yes,yes,yes,no,good,high
+user_h9p1ea,48,Female,yes,none,bleeding from mouth,yes,no,yes,no,good,medium
+user_cy127h,75,Male,yes,none,white patch on inner cheek,yes,no,no,no,good,medium
+user_42wsc3,66,Male,no,light,mouth ulcer not healing,yes,yes,yes,yes,poor,high
+user_4rzgyd,71,Female,no,none,difficulty swallowing,yes,no,yes,no,good,medium
+user_qsrnkz,23,Female,no,none,persistent pain in mouth,no,no,yes,no,moderate,low
+user_9p4627,41,Male,yes,light,lump in mouth,yes,no,no,yes,good,medium
+user_fovd79,22,Female,no,none,difficulty swallowing,no,yes,yes,no,poor,medium
+user_r11v12,78,Female,no,light,persistent pain in mouth,no,no,yes,no,good,low
+user_eri7b0,71,Male,no,none,red patch in mouth,no,no,yes,no,poor,medium
+user_w1xsrq,36,Female,no,none,mouth ulcer not healing,yes,yes,no,yes,moderate,medium
+user_q4pbgx,67,Female,no,none,persistent pain in mouth,yes,no,no,no,good,low
+user_urttqu,28,Male,no,none,persistent pain in mouth,no,no,no,yes,good,low
+user_ven3v1,58,Female,no,none,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_ildy5e,28,Male,no,none,lump in mouth,no,no,no,yes,poor,medium
+user_qaluld,49,Male,no,none,persistent pain in mouth,no,yes,no,no,moderate,low
+user_hw9c4h,34,Male,yes,none,bleeding from mouth,yes,yes,yes,no,moderate,high
+user_c2rh2x,37,Female,no,none,red patch in mouth,no,no,no,no,poor,low
+user_1gaz5u,31,Female,yes,light,bleeding from mouth,no,yes,yes,no,moderate,medium
+user_ffykpl,71,Male,no,light,mouth ulcer not healing,no,yes,no,yes,moderate,medium
+user_ifa2lr,45,Female,no,none,red patch in mouth,no,yes,yes,no,moderate,medium
+user_xg48ra,73,Male,yes,none,white patch on inner cheek,no,no,yes,no,poor,medium
+user_4iusex,55,Female,no,none,difficulty swallowing,yes,no,no,no,poor,medium
+user_07hdhj,44,Female,no,none,difficulty swallowing,no,yes,no,no,moderate,low
+user_y857nz,70,Female,yes,heavy,difficulty swallowing,yes,yes,yes,no,poor,high
+user_nxz6yt,33,Female,no,heavy,persistent pain in mouth,no,no,yes,yes,moderate,medium
+user_h66w51,44,Male,yes,none,bleeding from mouth,no,no,no,no,poor,medium
+user_p7dfjc,44,Female,no,none,white patch on inner cheek,yes,no,yes,yes,moderate,medium
+user_hkudiz,67,Male,no,light,bleeding from mouth,no,no,no,yes,moderate,low
+user_gvlkdn,43,Female,no,heavy,red patch in mouth,yes,yes,yes,yes,moderate,high
+user_hzgopj,23,Female,yes,none,white patch on inner cheek,no,no,no,yes,good,medium
+user_zg52kr,26,Female,no,light,bleeding from mouth,no,yes,no,yes,moderate,medium
+user_2b9iqi,55,Female,yes,none,bleeding from mouth,no,no,yes,no,poor,medium
+user_pvcub7,48,Female,no,heavy,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_9ye6bg,28,Female,no,heavy,red patch in mouth,yes,no,no,yes,moderate,medium
+user_ebe540,77,Female,yes,heavy,difficulty swallowing,no,no,no,yes,moderate,medium
+user_0r8u7w,46,Male,yes,none,red patch in mouth,yes,no,no,yes,poor,high
+user_qe6rp9,53,Female,no,none,lump in mouth,yes,yes,no,yes,good,medium
+user_5ggsj6,55,Male,no,heavy,difficulty swallowing,yes,no,yes,yes,moderate,high
+user_y5ayyo,55,Male,no,none,white patch on inner cheek,no,no,no,no,poor,low
+user_xlbwq8,64,Male,yes,none,lump in mouth,no,no,yes,yes,poor,high
+user_8nog85,23,Male,no,none,bleeding from mouth,no,no,yes,yes,moderate,medium
+user_rp3lye,60,Male,no,none,persistent pain in mouth,no,no,no,no,poor,low
+user_vdpngw,23,Male,no,heavy,lump in mouth,yes,yes,no,yes,moderate,high
+user_qc2k9y,37,Male,no,none,white patch on inner cheek,yes,yes,yes,no,moderate,medium
+user_dxujjc,50,Male,yes,light,red patch in mouth,yes,no,yes,yes,moderate,high
+user_5kvqyw,34,Female,no,heavy,red patch in mouth,yes,yes,yes,no,poor,high
+user_dtaegr,62,Female,no,heavy,difficulty swallowing,no,no,no,no,moderate,low
+user_deg3zg,19,Male,no,none,red patch in mouth,no,yes,yes,no,moderate,medium
+user_fpe60q,49,Female,yes,none,red patch in mouth,yes,no,no,yes,moderate,medium
+user_awz940,56,Female,yes,none,difficulty swallowing,no,yes,yes,yes,moderate,high
+user_utjx6e,57,Female,no,none,red patch in mouth,no,yes,no,no,moderate,low
+user_ih6mv4,60,Female,yes,none,lump in mouth,no,no,no,no,good,low
+user_wk0yeh,56,Female,yes,none,persistent pain in mouth,no,yes,yes,yes,good,high
+user_mjyg4s,69,Male,yes,none,red patch in mouth,yes,yes,no,no,moderate,medium
+user_211u64,73,Male,no,heavy,persistent pain in mouth,no,yes,yes,yes,poor,high
+user_bdw56f,36,Female,no,none,bleeding from mouth,yes,yes,no,no,good,medium
+user_eh81a4,48,Female,yes,none,mouth ulcer not healing,no,no,no,yes,good,medium
+user_1t2ep7,75,Female,no,none,lump in mouth,no,yes,no,yes,good,medium
+user_zscmo1,45,Male,no,none,lump in mouth,yes,yes,no,no,moderate,medium
+user_5z5zlm,70,Female,no,light,red patch in mouth,no,no,yes,no,poor,medium
+user_m3x15d,52,Female,no,light,red patch in mouth,no,yes,yes,no,poor,medium
+user_mwa6tj,71,Female,no,heavy,white patch on inner cheek,yes,no,no,no,good,medium
+user_bxek0q,80,Male,no,heavy,difficulty swallowing,yes,no,no,no,poor,medium
+user_2zyzsi,38,Male,no,none,white patch on inner cheek,yes,no,no,yes,good,medium
+user_c5rqns,55,Female,no,none,lump in mouth,no,no,no,no,good,low
+user_fezez5,25,Male,no,none,red patch in mouth,no,yes,no,yes,good,medium
+user_nksekn,36,Female,yes,none,bleeding from mouth,no,yes,no,no,good,medium
+user_g0atcb,48,Female,no,heavy,bleeding from mouth,no,no,yes,yes,poor,high
+user_w1yf0d,57,Female,no,heavy,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_zu2zue,53,Male,yes,light,difficulty swallowing,yes,yes,no,yes,good,high
+user_xt8jh3,71,Female,yes,none,mouth ulcer not healing,no,yes,no,yes,moderate,medium
+user_po4lje,24,Male,yes,none,bleeding from mouth,yes,yes,no,no,poor,high
+user_gwlaco,38,Male,no,none,persistent pain in mouth,yes,yes,yes,yes,poor,high
+user_vr1nec,47,Female,yes,none,lump in mouth,yes,yes,no,yes,good,high
+user_1xeuq4,50,Male,no,none,difficulty swallowing,yes,yes,no,no,good,medium
+user_aq3k8a,77,Female,yes,none,lump in mouth,no,no,yes,no,good,medium
+user_ftcdz3,64,Female,no,none,difficulty swallowing,no,no,no,no,moderate,low
+user_i9mqva,62,Male,no,none,persistent pain in mouth,yes,yes,yes,no,poor,high
+user_6z1t2x,22,Male,no,light,persistent pain in mouth,yes,no,no,no,moderate,low
+user_g1zaq7,46,Male,yes,none,mouth ulcer not healing,no,yes,yes,no,poor,high
+user_h98brz,56,Male,yes,heavy,lump in mouth,no,yes,no,no,good,medium
+user_txuyuc,26,Male,yes,heavy,bleeding from mouth,yes,no,yes,yes,poor,high
+user_ywy5ap,61,Male,no,none,bleeding from mouth,no,no,yes,no,moderate,low
+user_n15ikp,46,Female,yes,none,white patch on inner cheek,yes,yes,no,yes,good,high
+user_hlcwbp,19,Female,no,none,persistent pain in mouth,yes,no,yes,no,poor,medium
+user_271w1w,55,Male,yes,none,white patch on inner cheek,no,no,yes,yes,good,medium
+user_7pkwcy,53,Male,yes,none,white patch on inner cheek,no,yes,yes,no,moderate,medium
+user_qpwdxy,19,Female,no,none,white patch on inner cheek,yes,yes,yes,yes,poor,high
+user_esmrwg,26,Male,yes,none,persistent pain in mouth,no,no,yes,yes,moderate,medium
+user_lmnavy,21,Male,no,light,bleeding from mouth,yes,no,no,yes,good,medium
+user_xhcgry,47,Female,no,none,mouth ulcer not healing,no,no,no,yes,good,low
+user_q2bhai,32,Female,no,none,lump in mouth,no,no,yes,no,good,low
+user_3aamtf,46,Male,no,heavy,mouth ulcer not healing,yes,yes,yes,yes,moderate,high
+user_g5zmtg,19,Male,no,heavy,white patch on inner cheek,yes,no,yes,no,good,medium
+user_ki3x79,57,Female,no,none,red patch in mouth,yes,yes,yes,no,poor,high
+user_nv9ibw,30,Female,no,none,white patch on inner cheek,no,yes,no,yes,poor,medium
+user_cqxcs1,59,Female,no,none,mouth ulcer not healing,no,no,no,no,moderate,low
+user_uw2xh6,46,Male,no,none,persistent pain in mouth,yes,no,no,yes,good,medium
+user_1ksibs,39,Female,no,none,mouth ulcer not healing,no,no,no,no,good,low
+user_gixmc4,50,Male,no,heavy,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_hhlk3y,35,Male,no,heavy,bleeding from mouth,no,yes,no,no,moderate,medium
+user_2oouxq,50,Male,no,none,lump in mouth,yes,no,yes,no,poor,medium
+user_3md4p7,44,Male,no,heavy,white patch on inner cheek,no,yes,yes,no,poor,high
+user_a34mpy,43,Female,yes,none,bleeding from mouth,yes,yes,yes,no,poor,high
+user_wvv59h,43,Male,no,none,white patch on inner cheek,no,no,no,yes,good,low
+user_dtbyrg,22,Female,yes,none,lump in mouth,yes,no,yes,no,poor,high
+user_al6o9e,44,Female,no,none,bleeding from mouth,yes,yes,yes,no,moderate,medium
+user_3xfulh,63,Female,yes,none,red patch in mouth,no,yes,no,yes,poor,high
+user_lurqbd,59,Female,yes,light,bleeding from mouth,no,no,yes,no,good,medium
+user_gwpnxz,24,Female,no,none,bleeding from mouth,yes,no,no,yes,poor,medium
+user_066o1e,41,Male,no,none,bleeding from mouth,no,no,no,yes,moderate,low
+user_hbawyq,39,Female,no,none,white patch on inner cheek,no,yes,yes,no,poor,medium
+user_0rcti8,26,Female,no,light,red patch in mouth,yes,yes,yes,no,good,medium
+user_toc1yf,40,Male,yes,none,lump in mouth,yes,no,yes,yes,moderate,high
+user_ypvbnh,33,Female,no,none,white patch on inner cheek,no,yes,yes,no,good,medium
+user_yc8d4x,64,Male,yes,none,bleeding from mouth,no,no,yes,yes,poor,high
+user_opidla,59,Female,yes,none,red patch in mouth,yes,no,no,yes,good,medium
+user_5o1r9z,68,Male,yes,none,mouth ulcer not healing,no,yes,no,yes,poor,high
+user_1y9xca,76,Female,no,light,red patch in mouth,yes,yes,yes,yes,moderate,high
+user_ipicer,30,Male,no,light,red patch in mouth,no,no,yes,no,moderate,low
+user_x1s9xk,19,Male,no,none,red patch in mouth,yes,yes,yes,yes,poor,high
+user_5sgwcr,79,Male,yes,heavy,red patch in mouth,yes,yes,yes,yes,good,high
+user_spqfhp,56,Male,yes,none,lump in mouth,yes,no,no,yes,moderate,medium
+user_ogps01,70,Female,yes,none,bleeding from mouth,yes,no,yes,yes,moderate,high
+user_nlkurl,63,Female,yes,heavy,white patch on inner cheek,yes,no,no,no,moderate,medium
+user_78nrxv,44,Male,no,none,difficulty swallowing,yes,yes,no,no,poor,medium
+user_mzwncn,45,Male,yes,none,bleeding from mouth,no,yes,yes,no,poor,high
+user_qyjv84,18,Male,no,light,persistent pain in mouth,no,yes,yes,no,good,medium
+user_3jk8xn,37,Female,no,heavy,bleeding from mouth,yes,yes,no,yes,moderate,high
+user_07ol93,18,Male,yes,light,difficulty swallowing,no,no,no,yes,good,medium
+user_nzhg8q,70,Male,yes,none,red patch in mouth,yes,no,no,no,poor,medium
+user_6dwcde,22,Female,yes,none,persistent pain in mouth,yes,yes,yes,no,good,high
+user_x2bh2n,51,Female,no,none,mouth ulcer not healing,no,no,no,no,moderate,low
+user_37xncm,39,Male,yes,heavy,persistent pain in mouth,yes,yes,yes,no,poor,high
+user_1iqy5s,60,Male,yes,light,bleeding from mouth,no,yes,no,yes,poor,high
+user_lpvowc,45,Female,no,heavy,white patch on inner cheek,no,no,yes,yes,poor,high
+user_52zbrd,71,Female,yes,none,white patch on inner cheek,no,yes,yes,yes,good,high
+user_1xdpzf,77,Female,no,light,red patch in mouth,no,no,yes,yes,poor,medium
+user_wr2liu,77,Male,no,none,lump in mouth,no,no,yes,yes,moderate,medium
+user_edd070,25,Female,yes,none,persistent pain in mouth,yes,no,yes,yes,moderate,high
+user_9lny2s,56,Male,yes,none,bleeding from mouth,no,no,yes,no,good,medium
+user_rqvfx2,62,Male,no,none,lump in mouth,yes,no,no,yes,moderate,medium
+user_k8c3fz,72,Male,no,none,bleeding from mouth,yes,no,no,no,poor,medium
+user_6faopr,40,Female,no,none,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_l25b7k,59,Male,no,none,persistent pain in mouth,no,yes,yes,yes,poor,high
+user_hxn4d2,72,Male,no,heavy,lump in mouth,yes,yes,yes,no,moderate,high
+user_gb9xv8,58,Female,yes,none,persistent pain in mouth,no,no,yes,no,poor,medium
+user_9ydq3n,58,Female,no,none,white patch on inner cheek,yes,no,yes,yes,poor,high
+user_uuj02g,48,Female,yes,none,mouth ulcer not healing,yes,yes,no,yes,moderate,high
+user_ut3rsv,63,Male,no,none,lump in mouth,yes,yes,yes,yes,poor,high
+user_qlbuxd,34,Male,yes,none,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_k8s2xq,54,Female,no,none,mouth ulcer not healing,yes,yes,yes,yes,good,high
+user_gk38vh,40,Female,yes,light,white patch on inner cheek,no,no,no,yes,moderate,medium
+user_q8y7fh,58,Female,no,light,red patch in mouth,no,yes,no,yes,moderate,medium
+user_9pavce,25,Female,yes,light,mouth ulcer not healing,no,no,yes,yes,moderate,medium
+user_an8nd7,29,Female,no,light,white patch on inner cheek,no,no,no,yes,good,low
+user_g8om08,52,Female,no,none,white patch on inner cheek,yes,yes,yes,no,poor,high
+user_0b09zi,56,Female,no,none,mouth ulcer not healing,no,no,no,no,poor,low
+user_753k48,44,Female,no,light,white patch on inner cheek,yes,yes,yes,yes,good,high
+user_0tr58p,50,Male,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_aptm9x,76,Male,no,heavy,lump in mouth,yes,yes,yes,no,good,high
+user_s8pnne,76,Male,no,heavy,bleeding from mouth,yes,no,no,no,moderate,medium
+user_jawo77,79,Male,no,heavy,bleeding from mouth,no,yes,no,yes,poor,high
+user_qkdm0o,18,Male,no,none,difficulty swallowing,yes,no,yes,no,good,medium
+user_fxiokp,29,Female,yes,none,bleeding from mouth,no,yes,yes,no,poor,high
+user_pm5hgb,43,Female,no,heavy,red patch in mouth,yes,no,no,yes,moderate,medium
+user_rrye12,43,Female,yes,heavy,bleeding from mouth,yes,yes,yes,no,poor,high
+user_ayb3pv,18,Female,no,none,white patch on inner cheek,no,yes,yes,yes,good,medium
+user_kejzxp,48,Male,no,none,red patch in mouth,yes,yes,yes,yes,good,high
+user_ojgfah,73,Male,no,none,lump in mouth,yes,yes,no,no,moderate,medium
+user_cpbdn7,63,Female,yes,heavy,red patch in mouth,yes,yes,yes,no,good,high
+user_kkvpjr,39,Female,yes,light,lump in mouth,yes,no,no,no,poor,medium
+user_2tnxhn,74,Male,yes,light,white patch on inner cheek,yes,yes,yes,no,good,high
+user_ctm09h,64,Male,yes,none,difficulty swallowing,no,no,no,no,poor,medium
+user_z6cp7s,19,Male,no,light,red patch in mouth,no,yes,yes,yes,poor,high
+user_3rtscp,50,Female,no,none,difficulty swallowing,no,yes,yes,yes,good,medium
+user_uva7ss,64,Female,yes,none,lump in mouth,no,yes,yes,yes,good,high
+user_tkx7je,73,Male,no,none,bleeding from mouth,yes,yes,yes,no,poor,high
+user_vncztz,44,Female,yes,none,bleeding from mouth,yes,no,yes,no,good,medium
+user_jax57u,64,Female,no,none,lump in mouth,yes,no,yes,no,moderate,medium
+user_hw4oq0,45,Female,yes,none,persistent pain in mouth,yes,no,yes,yes,good,high
+user_u7gkl5,70,Female,no,none,red patch in mouth,yes,no,yes,no,poor,medium
+user_8ds03v,42,Female,yes,light,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_fwa88d,65,Female,no,none,red patch in mouth,no,no,yes,no,moderate,low
+user_ritjta,20,Male,no,none,bleeding from mouth,no,yes,yes,yes,good,medium
+user_inmk7y,61,Male,no,heavy,red patch in mouth,yes,no,no,yes,poor,high
+user_mm7dbf,45,Female,no,light,red patch in mouth,no,no,no,yes,moderate,low
+user_6x73zc,18,Male,no,none,red patch in mouth,no,no,no,yes,good,low
+user_u8kd9g,42,Female,yes,none,lump in mouth,no,no,yes,yes,moderate,medium
+user_prtt3n,55,Female,no,light,bleeding from mouth,yes,yes,yes,no,good,medium
+user_h4nred,76,Female,no,light,bleeding from mouth,yes,no,no,yes,poor,medium
+user_86i3ce,79,Male,no,none,persistent pain in mouth,no,yes,yes,yes,moderate,medium
+user_45bncc,54,Female,yes,none,lump in mouth,yes,no,no,no,poor,medium
+user_m2zkf5,20,Male,no,none,bleeding from mouth,no,no,no,no,poor,low
+user_i7jdn8,65,Male,no,none,persistent pain in mouth,yes,yes,no,no,moderate,medium
+user_xonbnp,35,Male,yes,none,bleeding from mouth,no,yes,yes,no,good,medium
+user_tcv1lt,58,Male,yes,none,difficulty swallowing,yes,no,yes,yes,moderate,high
+user_dl918s,38,Female,no,heavy,lump in mouth,yes,no,no,yes,poor,high
+user_3fvnv4,36,Male,yes,none,lump in mouth,yes,yes,yes,yes,poor,high
+user_f8s0x7,39,Female,no,none,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_9v8u9d,18,Male,no,none,bleeding from mouth,yes,no,yes,no,moderate,medium
+user_gkcumc,63,Female,yes,none,mouth ulcer not healing,no,yes,yes,no,good,medium
+user_nkowyp,50,Female,no,light,difficulty swallowing,no,no,yes,yes,poor,medium
+user_2zufdn,54,Female,no,none,bleeding from mouth,no,yes,no,no,moderate,low
+user_x6qd07,77,Female,no,none,mouth ulcer not healing,yes,no,no,no,good,low
+user_zrkbfq,58,Male,yes,none,difficulty swallowing,no,yes,no,no,moderate,medium
+user_hha1pj,29,Male,yes,none,white patch on inner cheek,no,no,no,yes,poor,medium
+user_6gb6p8,37,Male,yes,heavy,persistent pain in mouth,no,yes,no,no,poor,high
+user_u3u6h0,55,Male,yes,heavy,lump in mouth,no,yes,yes,no,good,high
+user_rl2yj0,46,Male,no,light,difficulty swallowing,yes,yes,yes,yes,moderate,high
+user_z1vhhg,61,Male,no,none,mouth ulcer not healing,no,yes,no,no,moderate,low
+user_omts1e,29,Female,no,none,difficulty swallowing,yes,no,no,no,poor,medium
+user_ypkw74,23,Male,yes,none,persistent pain in mouth,yes,no,yes,no,poor,high
+user_ubkpiq,42,Male,yes,none,white patch on inner cheek,no,no,no,no,good,low
+user_72sjxl,75,Female,no,none,persistent pain in mouth,yes,yes,yes,yes,moderate,high
+user_4s0lgu,45,Male,no,none,difficulty swallowing,no,yes,no,yes,poor,medium
+user_o0olfi,63,Male,no,light,bleeding from mouth,no,no,yes,no,good,low
+user_daa1fw,52,Male,no,none,lump in mouth,yes,no,no,yes,good,medium
+user_xhg403,42,Female,no,none,red patch in mouth,yes,yes,yes,no,poor,high
+user_efjgc4,76,Male,no,none,white patch on inner cheek,no,yes,no,yes,good,medium
+user_ynl63g,18,Male,no,light,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_9vasje,56,Male,no,none,bleeding from mouth,yes,yes,no,yes,good,medium
+user_bedyej,30,Male,yes,none,mouth ulcer not healing,no,no,no,no,good,low
+user_jh4z8d,68,Female,yes,none,lump in mouth,no,no,no,no,poor,medium
+user_03wvpu,41,Male,no,heavy,difficulty swallowing,no,no,no,no,moderate,low
+user_bgl2mc,60,Female,no,light,white patch on inner cheek,yes,no,yes,no,good,medium
+user_q26unv,51,Male,yes,none,difficulty swallowing,yes,no,no,no,moderate,medium
+user_hbrbje,46,Male,no,none,red patch in mouth,yes,no,yes,yes,moderate,medium
+user_k4o67b,59,Male,yes,none,bleeding from mouth,no,no,no,no,moderate,low
+user_oulwoz,47,Female,no,heavy,white patch on inner cheek,no,yes,yes,yes,good,high
+user_3e950i,23,Male,no,light,bleeding from mouth,yes,yes,no,yes,good,medium
+user_bkjy2n,62,Male,no,none,white patch on inner cheek,yes,no,yes,no,poor,medium
+user_qesux9,38,Female,yes,none,mouth ulcer not healing,yes,no,yes,yes,poor,high
+user_c8cah3,30,Female,yes,none,difficulty swallowing,no,no,no,yes,poor,medium
+user_de7nqw,30,Female,yes,none,red patch in mouth,no,yes,yes,no,good,medium
+user_0i6gbx,46,Female,yes,heavy,white patch on inner cheek,no,no,yes,yes,moderate,high
+user_ssbjdx,64,Female,yes,none,red patch in mouth,no,no,no,yes,poor,medium
+user_bide6u,33,Male,no,none,difficulty swallowing,no,no,no,yes,good,low
+user_05jh2m,36,Female,no,none,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_yflq8x,45,Female,yes,heavy,white patch on inner cheek,yes,yes,no,no,poor,high
+user_a5rbay,36,Male,no,none,red patch in mouth,yes,yes,no,no,moderate,medium
+user_rmtxjq,70,Female,yes,none,difficulty swallowing,no,yes,no,yes,good,medium
+user_94xfri,65,Female,no,light,red patch in mouth,no,yes,no,no,poor,medium
+user_g6mlv8,35,Female,yes,none,lump in mouth,no,yes,no,no,poor,medium
+user_82k8ry,47,Male,no,none,difficulty swallowing,yes,no,no,no,good,low
+user_2abkvb,37,Male,no,light,white patch on inner cheek,yes,no,yes,no,moderate,medium
+user_2s8u8z,27,Male,no,heavy,mouth ulcer not healing,yes,yes,no,no,good,medium
+user_3wp8dj,37,Female,yes,none,mouth ulcer not healing,yes,yes,no,yes,moderate,high
+user_tkduwt,42,Female,yes,none,lump in mouth,no,no,no,no,moderate,low
+user_q8q6a1,23,Male,no,none,red patch in mouth,no,yes,no,yes,moderate,medium
+user_eyq1s4,23,Male,yes,heavy,white patch on inner cheek,no,yes,no,no,poor,high
+user_lc0y0b,31,Male,no,heavy,red patch in mouth,yes,yes,no,no,poor,high
+user_9aryea,56,Male,no,none,white patch on inner cheek,no,yes,no,no,good,low
+user_7krgi4,34,Female,no,light,persistent pain in mouth,yes,yes,yes,yes,poor,high
+user_xg0trk,60,Male,no,none,lump in mouth,no,no,no,yes,moderate,low
+user_ppbqua,37,Male,no,heavy,difficulty swallowing,no,yes,no,yes,moderate,medium
+user_5qafs4,31,Female,no,none,difficulty swallowing,yes,yes,yes,no,poor,high
+user_zmz2k1,37,Female,yes,light,persistent pain in mouth,no,no,yes,no,good,medium
+user_zvuv3c,19,Male,yes,light,persistent pain in mouth,no,no,yes,yes,good,medium
+user_6g61pc,57,Female,yes,light,white patch on inner cheek,no,no,yes,yes,moderate,medium
+user_dqewuh,49,Female,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_a8dbfa,67,Female,no,heavy,mouth ulcer not healing,yes,no,yes,yes,poor,high
+user_3sm642,46,Female,no,heavy,difficulty swallowing,yes,yes,no,yes,good,high
+user_rbta3k,71,Female,no,none,bleeding from mouth,yes,no,yes,yes,poor,high
+user_7soczd,48,Female,no,none,persistent pain in mouth,no,yes,no,yes,good,medium
+user_h3l16c,49,Male,no,none,difficulty swallowing,yes,no,yes,no,poor,medium
+user_075re0,24,Male,no,none,mouth ulcer not healing,no,no,no,yes,good,low
+user_7a2hvn,61,Male,no,none,bleeding from mouth,no,yes,no,no,poor,medium
+user_ep69ng,45,Male,yes,none,white patch on inner cheek,yes,no,yes,yes,poor,high
+user_iccpkl,56,Male,no,none,persistent pain in mouth,no,yes,yes,yes,moderate,medium
+user_7hz364,46,Female,no,light,mouth ulcer not healing,yes,no,no,yes,good,medium
+user_mo8rc6,71,Male,yes,none,white patch on inner cheek,no,yes,yes,yes,poor,high
+user_p18a4j,55,Female,yes,heavy,white patch on inner cheek,no,no,no,yes,moderate,medium
+user_nbhgpb,37,Male,no,none,white patch on inner cheek,no,no,yes,yes,moderate,medium
+user_0w5271,69,Male,no,heavy,lump in mouth,no,no,no,no,good,low
+user_8q9i6k,61,Female,yes,none,difficulty swallowing,no,no,no,yes,poor,medium
+user_jjjx1a,37,Female,no,light,persistent pain in mouth,no,yes,no,yes,moderate,medium
+user_bmwuou,23,Female,no,none,white patch on inner cheek,no,yes,no,no,moderate,low
+user_5ewfwb,25,Male,yes,none,persistent pain in mouth,no,yes,yes,yes,poor,high
+user_99a44t,20,Male,yes,none,persistent pain in mouth,yes,yes,yes,yes,moderate,high
+user_u3ycpk,19,Female,no,none,persistent pain in mouth,no,no,no,yes,good,low
+user_nkfvdh,38,Female,no,none,difficulty swallowing,yes,yes,no,yes,good,medium
+user_89u9w0,52,Male,no,none,white patch on inner cheek,no,no,no,no,good,low
+user_4kii1n,47,Female,no,none,red patch in mouth,no,no,no,yes,moderate,low
+user_ucnri2,32,Male,no,none,persistent pain in mouth,yes,no,no,no,moderate,low
+user_eosfr5,30,Male,no,none,white patch on inner cheek,no,no,no,yes,good,low
+user_54agcs,51,Female,no,none,persistent pain in mouth,yes,no,yes,no,moderate,medium
+user_vw9b0m,46,Female,no,light,persistent pain in mouth,no,no,yes,yes,poor,medium
+user_167d6v,41,Female,no,none,difficulty swallowing,no,yes,yes,no,moderate,medium
+user_mu6u4p,38,Female,yes,none,red patch in mouth,yes,yes,no,no,poor,high
+user_5lmfkr,32,Male,yes,heavy,difficulty swallowing,yes,yes,no,yes,good,high
+user_h41a68,52,Male,yes,light,white patch on inner cheek,no,yes,no,no,poor,medium
+user_qeq7z7,25,Female,no,none,white patch on inner cheek,yes,no,yes,no,good,medium
+user_0icfmq,65,Male,no,none,white patch on inner cheek,no,yes,no,yes,poor,medium
+user_x5bwae,42,Male,no,none,red patch in mouth,no,yes,no,no,good,low
+user_h5840a,22,Female,no,none,red patch in mouth,yes,no,no,no,poor,medium
+user_vwrxgk,32,Female,no,none,lump in mouth,no,no,no,no,good,low
+user_h861pq,33,Female,yes,none,mouth ulcer not healing,yes,no,no,yes,moderate,medium
+user_45vybj,31,Female,yes,light,mouth ulcer not healing,no,no,no,no,moderate,low
+user_o6j0m3,37,Female,no,none,red patch in mouth,yes,yes,no,yes,poor,high
+user_t8an2l,40,Male,no,none,mouth ulcer not healing,yes,yes,no,yes,moderate,medium
+user_26lh07,20,Male,no,none,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_ki1ije,68,Female,no,none,lump in mouth,no,yes,yes,yes,poor,high
+user_z1oa3v,27,Male,no,light,red patch in mouth,no,no,no,yes,moderate,low
+user_jhjxqk,23,Male,no,none,persistent pain in mouth,no,yes,no,yes,moderate,medium
+user_081zqu,19,Female,no,none,persistent pain in mouth,yes,no,no,yes,poor,medium
+user_9dg5ri,27,Female,no,none,lump in mouth,yes,yes,no,no,moderate,medium
+user_lmfluo,18,Female,no,light,bleeding from mouth,no,no,no,yes,moderate,low
+user_qrt007,45,Male,no,light,red patch in mouth,yes,yes,yes,no,good,medium
+user_bpg2r0,53,Female,no,none,persistent pain in mouth,no,no,no,no,poor,low
+user_xfshwz,51,Female,no,none,mouth ulcer not healing,yes,yes,no,yes,moderate,medium
+user_ofc9lg,62,Male,no,none,white patch on inner cheek,no,yes,yes,no,poor,medium
+user_uiw7j3,73,Female,no,none,difficulty swallowing,no,no,yes,yes,poor,medium
+user_f0kjd2,55,Female,yes,light,difficulty swallowing,no,no,yes,yes,good,medium
+user_29d2ff,73,Male,yes,heavy,white patch on inner cheek,yes,no,no,no,moderate,medium
+user_k1io1z,40,Female,no,none,white patch on inner cheek,yes,yes,no,yes,moderate,medium
+user_ur2yup,40,Male,yes,none,persistent pain in mouth,no,no,yes,yes,moderate,medium
+user_n79hmh,55,Female,yes,heavy,mouth ulcer not healing,yes,no,yes,no,poor,high
+user_rbzjw8,70,Male,no,heavy,difficulty swallowing,no,no,yes,no,poor,medium
+user_513bb6,27,Male,no,none,persistent pain in mouth,yes,yes,no,yes,moderate,medium
+user_dt9gwa,71,Female,no,none,difficulty swallowing,no,yes,no,no,poor,medium
+user_yc3s0d,46,Male,yes,none,difficulty swallowing,no,yes,yes,no,moderate,medium
+user_ueq4d7,23,Male,no,none,white patch on inner cheek,yes,no,yes,yes,good,medium
+user_hnc0i4,59,Male,no,light,mouth ulcer not healing,yes,no,no,yes,moderate,medium
+user_flig5g,36,Female,no,none,persistent pain in mouth,no,no,no,no,poor,low
+user_yg8vfu,62,Female,yes,light,bleeding from mouth,no,yes,no,no,good,medium
+user_shhj7s,58,Male,no,none,mouth ulcer not healing,no,no,yes,no,poor,medium
+user_dm6frm,75,Male,yes,none,red patch in mouth,no,yes,yes,no,poor,high
+user_qupo4j,41,Female,no,none,white patch on inner cheek,yes,yes,no,no,moderate,medium
+user_8obs75,79,Male,no,none,red patch in mouth,yes,no,yes,yes,moderate,medium
+user_2fmoqx,30,Male,yes,none,red patch in mouth,yes,no,yes,yes,good,high
+user_y4nrmq,61,Female,no,heavy,lump in mouth,no,no,yes,yes,moderate,medium
+user_e1e163,64,Female,no,none,mouth ulcer not healing,no,yes,yes,yes,good,medium
+user_nm3v16,59,Male,yes,none,red patch in mouth,no,no,yes,no,moderate,medium
+user_xpkn3b,79,Female,yes,none,difficulty swallowing,yes,no,yes,no,poor,high
+user_0xo3fe,50,Female,no,none,lump in mouth,no,no,yes,no,moderate,low
+user_jwv2qn,48,Female,no,heavy,white patch on inner cheek,yes,no,no,yes,good,medium
+user_a8zjsw,73,Female,no,none,white patch on inner cheek,yes,no,no,no,good,low
+user_6yjmk3,52,Female,yes,none,white patch on inner cheek,no,no,no,yes,poor,medium
+user_e0togt,26,Male,no,none,mouth ulcer not healing,no,no,yes,no,good,low
+user_cnf9w5,42,Male,yes,light,mouth ulcer not healing,no,no,yes,yes,poor,high
+user_jx54pe,30,Female,no,light,difficulty swallowing,yes,yes,no,no,good,medium
+user_1p02jy,56,Female,no,light,mouth ulcer not healing,yes,no,yes,yes,moderate,medium
+user_xjq2wd,32,Male,no,none,difficulty swallowing,no,no,no,no,poor,low
+user_o7ammp,47,Female,yes,light,lump in mouth,no,no,no,yes,poor,medium
+user_48wumh,51,Female,yes,light,persistent pain in mouth,no,yes,yes,yes,poor,high
+user_mp9a9u,49,Male,no,none,persistent pain in mouth,yes,yes,no,yes,good,medium
+user_9ugf10,43,Female,no,none,difficulty swallowing,no,no,no,yes,poor,medium
+user_581lto,72,Female,no,none,bleeding from mouth,no,yes,yes,no,moderate,medium
+user_a31xyd,55,Female,no,none,lump in mouth,yes,yes,yes,yes,poor,high
+user_uoavfw,61,Male,no,none,difficulty swallowing,no,yes,yes,no,moderate,medium
+user_0iqzhe,22,Male,yes,none,red patch in mouth,no,yes,yes,no,poor,high
+user_x2456i,64,Male,yes,none,lump in mouth,no,no,no,yes,moderate,medium
+user_85tzv9,63,Male,no,light,white patch on inner cheek,no,no,yes,no,moderate,low
+user_zsxpef,34,Male,no,none,lump in mouth,no,yes,yes,no,good,medium
+user_jlyqz1,66,Female,yes,light,mouth ulcer not healing,no,no,no,yes,good,medium
+user_fkhnnk,78,Male,no,none,lump in mouth,no,no,yes,yes,good,medium
+user_v4ji4u,27,Male,yes,light,lump in mouth,no,no,yes,no,poor,medium
+user_f4ln5r,28,Female,yes,heavy,white patch on inner cheek,yes,no,yes,no,good,high
+user_ik22xm,47,Male,no,light,bleeding from mouth,yes,yes,no,yes,moderate,medium
+user_w8sj84,52,Male,no,none,difficulty swallowing,yes,yes,no,yes,poor,high
+user_74izg9,35,Female,yes,none,bleeding from mouth,yes,yes,no,yes,good,high
+user_ivuqt2,38,Male,yes,none,white patch on inner cheek,no,yes,yes,yes,poor,high
+user_ruu5e5,67,Male,no,light,bleeding from mouth,no,yes,no,no,poor,medium
+user_jwlrkx,34,Male,yes,light,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_a6srg1,61,Female,yes,heavy,mouth ulcer not healing,yes,yes,yes,yes,good,high
+user_lk1qy7,31,Male,yes,none,persistent pain in mouth,yes,yes,yes,no,poor,high
+user_9x22j7,48,Female,no,none,lump in mouth,no,no,no,no,moderate,low
+user_u1a7bo,59,Male,no,light,white patch on inner cheek,yes,yes,no,no,moderate,medium
+user_apnu02,57,Female,no,none,red patch in mouth,yes,no,no,no,good,low
+user_2o8zi9,55,Female,yes,none,mouth ulcer not healing,no,no,no,no,good,low
+user_q5c903,73,Male,no,none,difficulty swallowing,yes,no,yes,no,poor,medium
+user_txu3yf,67,Male,no,light,lump in mouth,no,no,no,yes,good,low
+user_linh8j,56,Male,yes,light,persistent pain in mouth,no,no,yes,yes,poor,high
+user_nu985l,52,Female,yes,none,white patch on inner cheek,yes,yes,yes,yes,poor,high
+user_4d7v91,67,Female,no,none,lump in mouth,yes,no,yes,yes,poor,high
+user_uq2086,43,Female,yes,light,white patch on inner cheek,yes,yes,no,no,good,medium
+user_jiylqx,67,Female,no,light,difficulty swallowing,yes,yes,yes,yes,moderate,high
+user_gav42t,79,Male,yes,none,red patch in mouth,yes,yes,no,yes,moderate,high
+user_9i71a5,78,Female,yes,heavy,white patch on inner cheek,no,yes,no,yes,moderate,high
+user_ph1ve8,50,Male,yes,none,persistent pain in mouth,no,no,no,yes,good,medium
+user_92mjeq,18,Female,no,none,bleeding from mouth,yes,no,no,no,good,low
+user_p4k9dx,42,Female,yes,heavy,lump in mouth,no,yes,yes,yes,good,high
+user_uefz1c,69,Male,no,light,mouth ulcer not healing,no,yes,no,yes,good,medium
+user_7803g5,25,Male,yes,none,persistent pain in mouth,no,no,no,yes,good,medium
+user_l5b56b,42,Male,yes,none,red patch in mouth,yes,no,yes,yes,moderate,high
+user_qo6p43,18,Female,no,heavy,mouth ulcer not healing,yes,no,no,yes,moderate,medium
+user_r3ues2,27,Male,no,light,lump in mouth,no,no,yes,yes,good,medium
+user_j0kzqv,51,Female,no,none,persistent pain in mouth,no,yes,yes,no,poor,medium
+user_bhgfb2,28,Female,yes,none,persistent pain in mouth,no,yes,no,no,good,medium
+user_qjp0xs,39,Female,no,none,mouth ulcer not healing,no,no,yes,no,poor,medium
+user_j2patd,80,Female,no,none,lump in mouth,no,yes,no,no,moderate,low
+user_p9c5so,78,Male,yes,light,bleeding from mouth,yes,yes,no,yes,poor,high
+user_4s2ni8,51,Male,no,none,red patch in mouth,yes,yes,no,yes,moderate,medium
+user_b8oosp,48,Female,yes,light,mouth ulcer not healing,yes,yes,no,no,good,medium
+user_7w8cof,70,Male,no,light,red patch in mouth,no,yes,no,no,poor,medium
+user_g4c8j6,25,Male,yes,none,mouth ulcer not healing,no,yes,yes,no,poor,high
+user_dwqxke,65,Female,yes,heavy,bleeding from mouth,no,no,yes,no,moderate,medium
+user_eqv5y2,66,Female,yes,none,lump in mouth,no,yes,no,no,moderate,medium
+user_cd1406,58,Female,no,light,mouth ulcer not healing,yes,yes,yes,no,good,medium
+user_vhpj93,49,Female,no,heavy,lump in mouth,no,yes,yes,yes,poor,high
+user_d8iuzv,70,Female,no,none,lump in mouth,no,no,yes,no,poor,medium
+user_0p6hgw,39,Male,yes,none,white patch on inner cheek,no,no,no,no,moderate,low
+user_9iqbq9,34,Male,yes,light,difficulty swallowing,no,no,no,yes,moderate,medium
+user_4mw04i,71,Female,yes,light,lump in mouth,no,no,no,yes,moderate,medium
+user_h4rmpn,28,Male,yes,none,difficulty swallowing,no,no,yes,no,poor,medium
+user_zhdv5o,34,Male,no,none,persistent pain in mouth,yes,no,yes,no,poor,medium
+user_uc9pbt,60,Female,yes,none,lump in mouth,yes,yes,yes,no,poor,high
+user_3fk84r,46,Female,no,heavy,red patch in mouth,no,yes,no,no,poor,medium
+user_j2n2pn,77,Male,yes,none,lump in mouth,yes,no,yes,yes,good,high
+user_92srl3,56,Male,no,light,lump in mouth,yes,no,no,yes,moderate,medium
+user_wrp8gu,53,Male,no,none,lump in mouth,yes,yes,no,yes,poor,high
+user_jj6avp,66,Male,no,none,persistent pain in mouth,no,no,no,yes,poor,medium
+user_2so19v,73,Male,no,none,bleeding from mouth,no,yes,yes,yes,poor,high
+user_ofh919,71,Male,yes,heavy,lump in mouth,yes,no,yes,yes,moderate,high
+user_u8noze,39,Male,yes,none,lump in mouth,no,no,no,yes,good,medium
+user_jhmxcq,24,Female,yes,light,difficulty swallowing,yes,no,yes,yes,good,high
+user_8tana6,54,Female,no,heavy,red patch in mouth,no,yes,yes,no,good,medium
+user_56vu6z,74,Male,no,light,persistent pain in mouth,yes,yes,yes,no,moderate,medium
+user_dyvgdg,27,Female,no,heavy,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_if8r2b,21,Female,no,heavy,lump in mouth,yes,yes,no,no,poor,high
+user_xke1kw,43,Female,no,none,persistent pain in mouth,yes,no,no,no,moderate,low
+user_r2kyb3,30,Male,yes,none,difficulty swallowing,yes,no,yes,yes,good,high
+user_8nmt3y,45,Male,no,light,white patch on inner cheek,yes,yes,no,yes,good,medium
+user_zchhxa,77,Female,yes,light,mouth ulcer not healing,yes,yes,no,yes,moderate,high
+user_3n4bfi,60,Female,no,none,difficulty swallowing,no,yes,no,no,poor,medium
+user_a3n4g2,34,Male,no,none,lump in mouth,no,yes,yes,yes,poor,high
+user_ef2ctg,65,Female,no,light,lump in mouth,no,no,no,no,poor,low
+user_j1o5hd,72,Female,yes,none,white patch on inner cheek,no,no,yes,yes,good,medium
+user_bndycp,41,Female,no,none,bleeding from mouth,yes,yes,yes,no,good,medium
+user_u8m87m,30,Male,no,none,mouth ulcer not healing,yes,yes,yes,yes,moderate,high
+user_xp5cit,53,Male,yes,heavy,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_z0lb6y,18,Female,yes,none,persistent pain in mouth,yes,yes,yes,yes,good,high
+user_x67xkw,46,Male,no,light,mouth ulcer not healing,no,no,yes,no,poor,medium
+user_5ik08n,34,Male,no,none,bleeding from mouth,no,yes,yes,no,moderate,medium
+user_ztio4m,78,Female,no,none,lump in mouth,no,no,no,no,moderate,low
+user_mxetiz,54,Male,no,light,bleeding from mouth,no,no,no,no,poor,low
+user_loqtq6,79,Female,yes,none,difficulty swallowing,yes,no,no,yes,moderate,medium
+user_ahug9y,67,Male,no,none,bleeding from mouth,yes,yes,no,no,moderate,medium
+user_i01rv1,51,Male,no,light,white patch on inner cheek,yes,yes,yes,no,good,medium
+user_l6hfh4,41,Female,no,light,persistent pain in mouth,no,yes,no,no,good,low
+user_2f5fe6,44,Male,no,light,lump in mouth,no,yes,yes,yes,moderate,medium
+user_db5rr1,55,Female,no,none,red patch in mouth,no,yes,no,no,moderate,low
+user_95ceko,27,Male,no,light,lump in mouth,yes,no,no,yes,moderate,medium
+user_v2a6pg,72,Female,yes,none,difficulty swallowing,yes,no,no,yes,good,medium
+user_xzj9mj,66,Female,no,none,white patch on inner cheek,yes,yes,yes,no,moderate,medium
+user_hqnzjn,41,Female,no,none,mouth ulcer not healing,no,yes,no,no,moderate,low
+user_cqy265,75,Male,yes,none,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_cuidc0,65,Female,no,light,red patch in mouth,no,no,yes,yes,good,medium
+user_zh0cd8,18,Female,no,none,white patch on inner cheek,yes,no,no,yes,moderate,medium
+user_3zrzq0,55,Male,no,none,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_uge1g4,66,Male,yes,light,difficulty swallowing,no,no,no,yes,moderate,medium
+user_jmia6y,36,Male,yes,none,mouth ulcer not healing,yes,no,yes,no,good,medium
+user_9yl16z,56,Male,no,light,mouth ulcer not healing,no,no,no,no,moderate,low
+user_krt0ig,62,Female,no,heavy,mouth ulcer not healing,no,no,no,no,good,low
+user_f1pafl,73,Male,no,none,bleeding from mouth,yes,yes,yes,yes,good,high
+user_arjhrf,71,Female,yes,none,lump in mouth,no,no,no,yes,moderate,medium
+user_8c8clr,36,Male,yes,heavy,bleeding from mouth,yes,no,no,yes,moderate,high
+user_wmlwwv,51,Female,yes,none,lump in mouth,yes,no,no,yes,good,medium
+user_qphli5,38,Female,no,none,difficulty swallowing,no,yes,yes,no,poor,medium
+user_u6zv3i,54,Female,no,none,white patch on inner cheek,no,yes,no,yes,poor,medium
+user_rv68jq,67,Male,no,none,red patch in mouth,no,yes,no,yes,good,medium
+user_wl3rfj,38,Female,no,light,difficulty swallowing,yes,yes,yes,no,poor,high
+user_c5ssin,62,Male,yes,none,mouth ulcer not healing,yes,yes,no,yes,moderate,high
+user_q6fwtv,66,Female,yes,none,mouth ulcer not healing,yes,no,no,yes,poor,high
+user_e8e5tn,38,Female,no,light,lump in mouth,no,no,yes,no,poor,medium
+user_4bkuu5,21,Male,no,heavy,red patch in mouth,yes,yes,yes,yes,good,high
+user_19mo1r,52,Male,no,light,persistent pain in mouth,yes,yes,yes,no,good,medium
+user_e6jixu,21,Male,no,none,bleeding from mouth,yes,yes,yes,no,moderate,medium
+user_nwoska,63,Female,no,none,difficulty swallowing,yes,yes,yes,no,good,medium
+user_mc5s3o,27,Male,no,light,mouth ulcer not healing,no,no,no,yes,good,low
+user_1jh6ox,46,Male,no,heavy,lump in mouth,no,yes,yes,yes,good,high
+user_nd7h10,37,Male,no,light,mouth ulcer not healing,no,yes,yes,no,good,medium
+user_slhgmr,64,Female,no,none,persistent pain in mouth,yes,no,no,no,poor,medium
+user_4iw54w,72,Male,no,heavy,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_nx80nk,59,Male,yes,none,white patch on inner cheek,no,yes,no,no,good,medium
+user_ew8257,29,Male,yes,light,persistent pain in mouth,no,no,yes,no,good,medium
+user_0fcybr,71,Female,no,heavy,difficulty swallowing,yes,yes,no,no,poor,high
+user_r2aj5i,46,Male,no,none,difficulty swallowing,no,no,yes,yes,moderate,medium
+user_nvqrfx,41,Male,yes,light,persistent pain in mouth,yes,no,no,no,moderate,medium
+user_1fy6yo,79,Female,yes,none,red patch in mouth,no,no,no,no,poor,medium
+user_5fbs4w,56,Female,no,light,red patch in mouth,yes,yes,no,yes,moderate,medium
+user_59tsuj,53,Male,no,light,bleeding from mouth,no,no,yes,no,poor,medium
+user_4n7s3h,40,Female,no,heavy,red patch in mouth,no,yes,yes,yes,poor,high
+user_2r6zl1,37,Male,no,none,bleeding from mouth,yes,yes,yes,yes,moderate,high
+user_eg1cj8,45,Female,no,none,difficulty swallowing,no,no,no,no,good,low
+user_kw7wvy,80,Male,no,none,mouth ulcer not healing,no,no,yes,no,poor,medium
+user_v58y9n,79,Female,no,none,mouth ulcer not healing,yes,yes,yes,yes,moderate,high
+user_nmvqlt,63,Female,yes,none,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_gju2t0,34,Male,no,none,persistent pain in mouth,no,yes,yes,no,poor,medium
+user_ldf4hr,18,Female,no,light,red patch in mouth,no,yes,no,yes,good,medium
+user_my4iqz,76,Male,yes,none,lump in mouth,yes,no,no,no,poor,medium
+user_pz6ntp,20,Female,no,light,white patch on inner cheek,yes,yes,no,no,moderate,medium
+user_o765ef,54,Male,no,none,difficulty swallowing,no,no,no,yes,poor,medium
+user_gouife,62,Female,yes,none,bleeding from mouth,yes,yes,no,yes,moderate,high
+user_5e742g,48,Female,no,none,persistent pain in mouth,yes,yes,yes,yes,good,high
+user_r9cfwo,58,Female,no,light,persistent pain in mouth,yes,no,yes,no,moderate,medium
+user_ay7ov5,65,Male,no,heavy,difficulty swallowing,no,yes,yes,no,moderate,medium
+user_1pbcd6,27,Male,no,none,persistent pain in mouth,no,no,no,no,moderate,low
+user_sn5yz7,56,Male,no,none,persistent pain in mouth,no,yes,no,no,moderate,low
+user_5vi7li,30,Female,no,none,mouth ulcer not healing,no,no,no,no,poor,low
+user_x16f1k,61,Female,no,none,red patch in mouth,no,yes,yes,no,poor,medium
+user_ivwm53,41,Male,no,light,difficulty swallowing,no,no,yes,no,poor,medium
+user_centoc,69,Female,no,none,difficulty swallowing,no,no,yes,no,good,low
+user_9wrdpl,26,Male,yes,light,white patch on inner cheek,yes,yes,no,yes,poor,high
+user_ted0pb,60,Male,yes,none,difficulty swallowing,no,no,no,yes,good,medium
+user_hv17mi,19,Female,no,none,bleeding from mouth,no,yes,yes,yes,good,medium
+user_uw93ei,44,Male,yes,light,red patch in mouth,yes,no,yes,yes,good,high
+user_yp44qi,72,Male,no,none,red patch in mouth,no,no,yes,no,good,low
+user_5r2slr,57,Female,no,light,mouth ulcer not healing,yes,yes,no,yes,moderate,medium
+user_hloiki,56,Female,no,light,difficulty swallowing,yes,yes,no,yes,moderate,medium
+user_umapqp,45,Female,yes,none,mouth ulcer not healing,no,yes,yes,yes,poor,high
+user_xv349n,66,Male,yes,heavy,white patch on inner cheek,yes,no,yes,no,moderate,high
+user_ffp5go,28,Male,yes,none,white patch on inner cheek,yes,no,no,no,good,medium
+user_i3hzcd,70,Male,no,light,difficulty swallowing,no,yes,yes,yes,good,medium
+user_2lgj3s,75,Male,no,none,persistent pain in mouth,yes,yes,yes,no,poor,high
+user_2qqzzf,56,Male,yes,none,white patch on inner cheek,no,no,no,no,poor,medium
+user_tos87m,56,Female,no,none,persistent pain in mouth,yes,no,yes,yes,good,medium
+user_c94e6n,37,Female,yes,none,bleeding from mouth,yes,yes,no,yes,moderate,high
+user_520xki,19,Male,no,none,persistent pain in mouth,no,no,no,yes,moderate,low
+user_e8ifxd,41,Male,no,heavy,lump in mouth,no,yes,no,no,poor,medium
+user_tb94cl,37,Male,yes,none,lump in mouth,no,yes,yes,yes,poor,high
+user_sao2qw,36,Female,yes,none,white patch on inner cheek,no,no,no,yes,poor,medium
+user_20uc87,42,Female,no,none,lump in mouth,no,yes,yes,yes,good,medium
+user_wjhbae,44,Male,no,light,red patch in mouth,no,no,yes,yes,good,medium
+user_fb02h6,28,Female,yes,light,bleeding from mouth,no,no,no,no,poor,medium
+user_u63lxs,60,Female,no,light,red patch in mouth,yes,yes,no,no,moderate,medium
+user_lsr0o8,37,Female,yes,none,red patch in mouth,yes,yes,no,yes,good,high
+user_zsoouk,33,Male,no,heavy,lump in mouth,yes,no,yes,no,moderate,medium
+user_3frb7e,33,Female,no,none,persistent pain in mouth,yes,no,no,yes,moderate,medium
+user_i2mvv4,24,Male,yes,light,red patch in mouth,no,no,yes,yes,good,medium
+user_age9ny,70,Female,no,none,red patch in mouth,no,no,yes,yes,poor,medium
+user_cba726,70,Female,yes,none,difficulty swallowing,yes,no,yes,yes,moderate,high
+user_vjxzdv,62,Female,yes,heavy,lump in mouth,yes,no,no,no,poor,high
+user_lx3p72,72,Female,no,none,persistent pain in mouth,yes,yes,yes,yes,good,high
+user_vedqfc,67,Female,no,none,lump in mouth,no,no,no,yes,poor,medium
+user_yy0kz6,59,Male,no,none,mouth ulcer not healing,yes,yes,yes,no,moderate,medium
+user_grxozl,26,Female,no,light,lump in mouth,no,yes,yes,yes,moderate,medium
+user_or9f5i,56,Female,no,heavy,lump in mouth,yes,no,yes,yes,poor,high
+user_mmwmd1,80,Male,yes,none,lump in mouth,no,no,yes,no,poor,medium
+user_2qztt1,20,Female,yes,none,lump in mouth,yes,no,no,no,poor,medium
+user_u74ij6,72,Male,no,light,difficulty swallowing,no,no,no,yes,poor,medium
+user_ih3iab,22,Female,no,heavy,persistent pain in mouth,yes,no,yes,no,poor,high
+user_hxkei9,53,Female,yes,light,white patch on inner cheek,no,yes,no,yes,moderate,medium
+user_ae0jxy,44,Male,no,none,red patch in mouth,no,yes,no,no,poor,medium
+user_yxcfe7,79,Male,yes,light,bleeding from mouth,no,yes,yes,no,moderate,medium
+user_e12qey,35,Male,no,none,red patch in mouth,no,yes,no,yes,poor,medium
+user_22dcff,70,Male,no,heavy,lump in mouth,no,yes,no,no,moderate,medium
+user_ds3hgw,67,Male,no,light,bleeding from mouth,no,no,no,no,poor,low
+user_n6bgua,60,Female,no,none,bleeding from mouth,yes,no,no,yes,good,medium
+user_4vueer,53,Female,yes,light,bleeding from mouth,no,yes,no,no,moderate,medium
+user_bd7x9z,70,Female,no,none,bleeding from mouth,no,yes,no,yes,moderate,medium
+user_lka9lz,73,Male,no,light,bleeding from mouth,yes,no,yes,yes,moderate,medium
+user_1leuuc,21,Female,yes,light,bleeding from mouth,yes,no,no,yes,moderate,medium
+user_1b7pxj,21,Male,yes,heavy,difficulty swallowing,yes,yes,no,yes,moderate,high
+user_3odf76,33,Male,yes,none,difficulty swallowing,yes,yes,no,yes,poor,high
+user_zg85s9,18,Female,no,light,bleeding from mouth,yes,no,yes,yes,moderate,medium
+user_hygtmo,55,Female,no,none,red patch in mouth,yes,no,no,no,good,low
+user_9ogjeg,59,Male,no,none,lump in mouth,yes,yes,yes,yes,poor,high
+user_co8jea,31,Male,no,none,white patch on inner cheek,no,yes,no,yes,good,medium
+user_025lox,61,Female,no,none,lump in mouth,yes,yes,no,no,good,medium
+user_54xr8p,34,Male,no,none,bleeding from mouth,yes,no,no,yes,moderate,medium
+user_dkkg1r,66,Male,no,none,lump in mouth,yes,no,yes,no,moderate,medium
+user_8jrpe2,59,Female,no,heavy,difficulty swallowing,yes,yes,no,no,poor,high
+user_jd5slo,22,Male,yes,none,bleeding from mouth,yes,yes,no,yes,good,high
+user_8lytua,30,Male,yes,none,bleeding from mouth,no,no,no,yes,poor,medium
+user_o4vudq,30,Male,yes,heavy,mouth ulcer not healing,no,yes,no,no,good,medium
+user_puyd6i,73,Male,yes,none,lump in mouth,yes,yes,no,yes,good,high
+user_0hdj7o,35,Female,no,none,red patch in mouth,yes,yes,no,yes,good,medium
+user_rjg107,49,Male,no,heavy,white patch on inner cheek,yes,yes,no,yes,moderate,high
+user_z71uf0,80,Male,no,none,bleeding from mouth,yes,yes,yes,yes,good,high
+user_3hkcqw,20,Male,no,light,mouth ulcer not healing,no,no,yes,yes,good,medium
+user_ranty6,24,Male,no,none,red patch in mouth,no,yes,no,yes,poor,medium
+user_3jsty8,77,Female,no,none,difficulty swallowing,yes,no,no,yes,poor,medium
+user_4qlv72,71,Male,yes,none,bleeding from mouth,no,yes,yes,yes,good,high
+user_iz8er6,55,Male,yes,none,red patch in mouth,yes,yes,yes,yes,good,high
+user_tdsdjt,70,Male,yes,none,bleeding from mouth,yes,yes,yes,yes,poor,high
+user_fppwc1,47,Male,no,heavy,mouth ulcer not healing,yes,yes,yes,yes,poor,high
+user_y50df0,58,Male,yes,none,bleeding from mouth,yes,no,no,yes,poor,high
+user_0vz9ly,68,Female,no,none,white patch on inner cheek,yes,no,no,no,poor,medium
+user_6cg1s2,38,Female,no,none,persistent pain in mouth,yes,yes,yes,yes,poor,high
+user_jimmns,51,Male,no,none,red patch in mouth,no,yes,no,yes,moderate,medium
+user_nblgu0,53,Male,no,none,red patch in mouth,yes,no,no,no,good,low
+user_1284se,21,Female,no,heavy,bleeding from mouth,no,no,yes,yes,moderate,medium
+user_wj4g8r,77,Male,no,none,bleeding from mouth,yes,yes,no,no,good,medium
+user_fczwkg,54,Female,no,none,red patch in mouth,no,yes,no,no,good,low
+user_d8jqbo,78,Female,yes,heavy,mouth ulcer not healing,no,yes,yes,no,good,high
+user_zntgg5,64,Male,no,none,mouth ulcer not healing,no,no,no,yes,good,low

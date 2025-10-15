@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oral Cancer Risk Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 450px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 12px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oral Cancer Risk Prediction</h1>
+    <form method="POST">
+
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Age:</label>
+      <input type="number" name="age" min="1" max="120" required>
+
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label>Smoker:</label>
+      <select name="smoker" required>
+        <option>no</option>
+        <option>yes</option>
+      </select>
+
+      <label>Alcohol Consumption:</label>
+      <select name="alcohol" required>
+        <option>none</option>
+        <option>light</option>
+        <option>heavy</option>
+      </select>
+
+      <label>White Patches in Mouth:</label>
+      <select name="white_patches" required>
+        <option>no</option>
+        <option>yes</option>
+      </select>
+
+      <label>Human Papillomavirus (HPV) Infection:</label>
+      <select name="hpv" required>
+        <option>no</option>
+        <option>yes</option>
+      </select>
+
+      <label>Genetic History of Cancer:</label>
+      <select name="genetics" required>
+        <option>no</option>
+        <option>yes</option>
+      </select>
+
+      <label>Chronic Irritation (e.g., dentures, sharp tooth):</label>
+      <select name="chronic_irritation" required>
+        <option>no</option>
+        <option>yes</option>
+      </select>
+
+      <label>Overall Oral Condition:</label>
+      <select name="oral_condition" required>
+        <option>good</option>
+        <option>moderate</option>
+        <option>poor</option>
+      </select>
+
+      <label>Describe Symptoms (text):</label>
+      <textarea name="symptoms_text" rows="3" placeholder="Describe any symptoms..." required></textarea>
+
+      <button type="submit">Predict Risk</button>
+    </form>
+  </div>
+</body>
+</html>
