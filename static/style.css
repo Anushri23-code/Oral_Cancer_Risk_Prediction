@@ -1,64 +1,160 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e6f0ff, #f8fbff);
+  color: #333;
+  overflow-x: hidden;
 }
-.container {
-    background: white;
-    max-width: 600px;
-    margin: auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
 }
-h1 {
-    text-align: center;
-    color: #333;
+.logo { font-size: 22px; font-weight: 600; color: #2c3e50; }
+nav a { text-decoration: none; color: #333; font-weight: 500; margin-left: 25px; transition: color 0.3s ease;}
+nav a:hover { color: #0077cc; }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px; /* adjust as needed */
+  overflow: hidden;
 }
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6); /* darken image so text pops */
 }
-button {
-    margin-top: 20px;
-    width: 100%;
-    background: #2a7ae2;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
 }
-button:hover {
-    background: #175bb5;
+
+.hero-overlay h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
-a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #2a7ae2;
-    text-decoration: none;
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
-a:hover {
-    text-decoration: underline;
+
+.btn-get-started {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
-.risk {
-    color: #d9534f;
-    font-weight: bold;
+.btn-get-started:hover {
+  background: #005fa3;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
+.about {
+  padding: 100px 60px;
+  background: #fff;
+  text-align: center;
 }
-th, td {
-    padding: 6px 10px;
+
+.about h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
 }
-th {
-    background: #e9ecef;
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0077cc;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about p {
+  font-size: 17px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+}
+
+/* Feature cards container */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ensures features stack on small screens */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Each feature card */
+.feature {
+  background: #f3f8ff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 250px;  /* constrain width */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.feature img {
+  width: 60px; /* constrain icon size */
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #555;
+  font-size: 15px;
+}
+.large-icon {
+  width: 120px;  /* adjust as needed */
+  height: 120px;
 }

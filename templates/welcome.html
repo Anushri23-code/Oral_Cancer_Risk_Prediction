@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oral Cancer Risk Prediction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">Oral Cancer Risk Predictor</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="/login" class="btn-login">Login / Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="hero-container">
+    <img src="{{ url_for('static', filename='images/doctor.jpg') }}" alt="Doctor consulting patient" class="hero-image">
+    <div class="hero-overlay">
+      <h1>Predict Oral Cancer Risk<br>with Confidence</h1>
+      <p>
+        Harness AI to detect oral cancer risks early. Fast, reliable predictions help patients and doctors take proactive steps for prevention and better care.
+      </p>
+      <a href="/login" class="btn-get-started">Get Started</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="about" class="about">
+  <h2>About This Project</h2>
+  <p>
+    The Oral Cancer Risk Prediction platform simplifies early risk detection. Built with advanced AI models and a user-friendly interface, it ensures that both patients and doctors can access reliable predictions anytime, anywhere.
+  </p>
+
+  <div class="features">
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/accessible.png') }}" alt="Accessible icon" />
+      <h3>Accessible Anywhere</h3>
+      <p>Works seamlessly across devices — desktop, tablet, and mobile.</p>
+    </div>
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/ai.png') }}" alt="AI icon" />
+      <h3>Smart AI Predictions</h3>
+      <p>Accurate risk assessment using trained machine learning models.</p>
+    </div>
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/doctor_icon.png') }}" alt="Doctor icon" class="large-icon" />
+
+      <h3>For Patients & Doctors</h3>
+      <p>Collaborative design for informed decision-making and awareness.</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Oral Cancer Risk Prediction Project — All Rights Reserved
+  </footer>
+</body>
+</html>
