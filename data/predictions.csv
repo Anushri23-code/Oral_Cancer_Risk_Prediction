@@ -1,14 +1,14 @@
-timestamp,name,age,gender,smoker,alcohol,white_patches,hpv,genetics,chronic_irritation,oral_condition,symptoms_text,predicted_label,predicted_prob
-2025-10-14T21:07:34.118599,ani,35,Male,yes,light,yes,yes,yes,yes,moderate,"bleeding,pain",high,0.9991242532234657
-2025-10-14T21:10:46.064543,anvi,27,Male,yes,light,yes,yes,yes,yes,moderate,"ulcers, bleeding",high,0.9990190287294869
-2025-10-14T21:11:57.199606,Aditya ,27,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9154102237817751
-2025-10-14T21:14:27.557576,rakesh,27,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9154102237817751
-2025-10-14T21:21:15.238040,abhi,35,Male,yes,light,no,yes,no,no,moderate,"pain,bleeding",medium,0.94426625230499
-2025-10-14T21:24:51.169269,anis,29,Male,yes,light,yes,yes,no,yes,moderate,"pain,bleeding",high,0.91544784738061
-2025-10-14T21:34:53.325012,sudi,23,Male,yes,light,yes,yes,yes,yes,moderate,"pain,bleeding",high,0.9990930180103856
-2025-10-15T08:15:25.554923,sus,33,Male,yes,light,yes,no,no,yes,moderate,nothing,medium,0.9122790644777048
-2025-10-15T10:06:29.343514,anb,35,Male,yes,light,yes,yes,yes,yes,moderate,"pain,bleeding",high,0.9991242532234657
-2025-10-15T10:06:57.752254,anb,35,Male,yes,light,yes,yes,yes,yes,moderate,nothing ,high,0.9990560231099561
-2025-10-15T10:07:38.926997,awe,30,Male,yes,light,yes,no,no,yes,good,nothing,medium,0.9147297397674161
-2025-10-15T11:05:21.152819,as,27,Male,yes,light,no,no,no,yes,moderate,nothing,medium,0.940526021825737
-2025-10-15T12:58:00.469210,asd,26,Male,yes,light,yes,no,no,yes,moderate,nothing,medium,0.9139004549944882
+timestamp,name,age,gender,country,smoker,alcohol,betel_quid_use,hpv,genetics,immune_compromised,chronic_irritation,poor_oral_hygiene,diet,oral_lesions,white_patches,difficulty_swallowing,oral_condition,symptoms_text,predicted_label,predicted_prob
+2025-10-20T12:33:13.400706,ggf,45,Female,india,no,none,no,yes,yes,no,yes,no,low,yes,no,yes,moderate,nothing,medium,0.9324267309658469
+2025-10-20T13:02:02.428993,ggf,45,Female,,yes,light,yes,no,yes,yes,yes,yes,moderate,no,yes,yes,good,nothing,high,0.9047893368707152
+2025-10-22T09:25:30.108937,sas,35,Male,,yes,light,yes,,,,,,,yes,,,,,medium,0.727693954899985
+2025-10-22T09:27:05.615134,sas,35,Male,,yes,light,yes,,,,,,,yes,,,,,medium,0.727693954899985
+2025-10-22T09:27:56.538438,abc,36,Female,,no,heavy,yes,yes,yes,,,yes,,yes,,,,nothing,high,0.9633459167379299
+2025-10-22T09:31:01.382158,abc,40,Male,,yes,heavy,yes,yes,yes,yes,no,yes,high,yes,yes,yes,moderate,nothing,high,0.9989245577859636
+2025-10-22T09:45:16.156621,abc,35,Female,,yes,light,yes,yes,yes,yes,yes,yes,high,yes,yes,yes,,nothing,high,0.9997743959552474
+2025-10-22T10:11:00.943864,sas,23,Male,,yes,light,yes,yes,no,yes,yes,yes,high,yes,yes,yes,,nothing,high,0.9775215906950029
+2025-10-22T10:13:38.659464,g,25,Male,,no,light,no,no,yes,no,no,yes,low,yes,no,yes,,nothing,low,0.5355618772640295
+2025-10-22T10:17:45.724879,a,65,Female,india,yes,heavy,yes,yes,no,yes,no,no,high,no,yes,yes,,nothing,high,0.9758515020675603
+2025-10-27T15:14:26.691152,d,50,Female,india,yes,heavy,yes,yes,yes,yes,yes,no,low,yes,yes,yes,,nothing,high,0.9999974402436533
+abc,2025-10-30T21:00:17.180365,a,50,Male,india,yes,light,yes,yes,yes,yes,yes,yes,high,yes,yes,yes,,nothing,high,0.9997948071902576
+abc,2025-10-30T21:01:36.387983,b,45,Male,india,yes,light,no,no,no,no,no,no,low,no,no,no,,nothing,low,0.5601269589989258

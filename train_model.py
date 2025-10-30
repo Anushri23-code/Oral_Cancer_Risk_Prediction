@@ -1,4 +1,4 @@
-# train_model.py (updated version)
+# train_model.py
 import os
 import pandas as pd
 import numpy as np
@@ -30,22 +30,24 @@ def make_sample_dataset(path, n=1000, random_state=42):
         gender = random.choice(["Male", "Female"])
         smoker = random.choices(["yes","no"], weights=[0.35,0.65])[0]
         alcohol = random.choices(["none","light","heavy"], weights=[0.6,0.25,0.15])[0]
+        betel_quid_use = random.choice(["yes","no"])
         symptom = random.choice(symptoms_examples)
-        
         white_patches = random.choice(["yes", "no"])
         hpv = random.choice(["yes", "no"])
         genetics = random.choice(["yes", "no"])
+        immune_compromised = random.choice(["yes","no"])
         chronic_irritation = random.choice(["yes", "no"])
-        oral_condition = random.choice(["good", "moderate", "poor"])
-        
+        poor_oral_hygiene = random.choice(["yes","no"])
+        diet = random.choice(["low","moderate","high"])
+        oral_lesions = random.choice(["yes","no"])
+        difficulty_swallowing = random.choice(["yes","no"])
+        oral_condition = random.choice(["good", "moderate", "poor"])  # optional, for risk calculation
+
+        # Risk score calculation (simplified example)
         risk_score = 0
-        if white_patches == "yes": risk_score += 1
-        if hpv == "yes": risk_score += 1
-        if genetics == "yes": risk_score += 1
-        if chronic_irritation == "yes": risk_score += 1
-        if smoker == "yes": risk_score += 1
-        if alcohol == "heavy": risk_score += 1
-        if oral_condition == "poor": risk_score += 1
+        for val in [white_patches, hpv, genetics, chronic_irritation, smoker, alcohol=="heavy", oral_condition=="poor"]:
+            if val:
+                risk_score += 1
 
         if risk_score <= 1:
             label = "low"
@@ -60,14 +62,21 @@ def make_sample_dataset(path, n=1000, random_state=42):
             "gender": gender,
             "smoker": smoker,
             "alcohol": alcohol,
-            "symptoms_text": symptom,
+            "betel_quid_use": betel_quid_use,
             "white_patches": white_patches,
             "hpv": hpv,
             "genetics": genetics,
+            "immune_compromised": immune_compromised,
             "chronic_irritation": chronic_irritation,
+            "poor_oral_hygiene": poor_oral_hygiene,
+            "diet": diet,
+            "oral_lesions": oral_lesions,
+            "difficulty_swallowing": difficulty_swallowing,
             "oral_condition": oral_condition,
+            "symptoms_text": symptom,
             "label": label
         })
+
     df = pd.DataFrame(rows)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_csv(path, index=False)
@@ -76,15 +85,23 @@ def make_sample_dataset(path, n=1000, random_state=42):
 
 def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
     df = make_sample_dataset(path)
-    X = df[["age", "gender", "smoker", "alcohol", "white_patches",
-            "hpv", "genetics", "chronic_irritation", "oral_condition", "symptoms_text"]]
+    X = df[[
+        "age", "gender", "smoker", "alcohol", "betel_quid_use",
+        "white_patches", "hpv", "genetics", "immune_compromised",
+        "chronic_irritation", "poor_oral_hygiene", "diet",
+        "oral_lesions", "difficulty_swallowing", "oral_condition", "symptoms_text"
+    ]]
     y = df["label"]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
     numeric_features = ["age"]
-    categorical_features = ["gender", "smoker", "alcohol", "white_patches",
-                            "hpv", "genetics", "chronic_irritation", "oral_condition"]
+    categorical_features = [
+        "gender", "smoker", "alcohol", "betel_quid_use",
+        "white_patches", "hpv", "genetics", "immune_compromised",
+        "chronic_irritation", "poor_oral_hygiene", "diet",
+        "oral_lesions", "difficulty_swallowing", "oral_condition"
+    ]
     text_feature = "symptoms_text"
 
     numeric_transformer = Pipeline(steps=[("scaler", StandardScaler())])

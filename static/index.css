@@ -1,0 +1,190 @@
+/* ---- GLOBAL ---- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ---- BACKGROUND ---- */
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- WRAPPER ---- */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ---- FORM CARD ---- */
+.form-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  padding: 40px 35px;
+  max-width: 480px;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- HEADING ---- */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h1 i {
+  color: #00d4ff;
+  margin-right: 8px;
+}
+
+/* ---- PROGRESS ---- */
+.progress-container {
+  position: relative;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 0%;
+  background: linear-gradient(90deg, #00d4ff, #00ffa3);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #00ffa3;
+  box-shadow: 0 0 12px #00ffa3;
+}
+
+/* ---- FORM ---- */
+.input-group {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #cceeff;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
+
+/* ---- BUTTONS ---- */
+.buttons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+button {
+  background: linear-gradient(135deg, #00d4ff, #00ffa3);
+  border: none;
+  padding: 14px 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+}
+
+button i {
+  margin-right: 6px;
+}
+
+/* ---- STEP TRANSITION ---- */
+.step {
+  display: none;
+  animation: slideIn 0.6s ease;
+}
+.step.active {
+  display: block;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #cceeff;
+}
+
+.footer a {
+  color: #00ffa3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

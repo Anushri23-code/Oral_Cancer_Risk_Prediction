@@ -1,75 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prediction History</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f6fa;
-      padding: 30px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
     table {
       width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: rgb(255, 255, 255);
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      overflow: hidden;
     }
+
     th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-      font-size: 14px;
+      padding: 12px 15px;
+      color: #fff;
     }
+
     th {
-      background-color: #3498db;
-      color: white;
+      background: rgba(0,212,255,0.6);
+      font-weight: 600;
+      text-align: left;
     }
-    tr:nth-child(even) { background-color: #f2f2f2; }
-    .low { color: #27ae60; font-weight: bold; }
-    .medium { color: #f1c40f; font-weight: bold; }
-    .high { color: #e74c3c; font-weight: bold; }
-    a {
+
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,0.05);
+    }
+
+    tr:hover td {
+      background: rgba(0,212,255,0.2);
+      transition: 0.3s;
+    }
+
+    .low { color: #2ecc71; font-weight: 600; }
+    .medium { color: #f1c40f; font-weight: 600; }
+    .high { color: #e74c3c; font-weight: 600; }
+
+    .buttons a.btn {
       display: inline-block;
+      margin: 10px 5px;
+      background: linear-gradient(135deg, #00d4ff, #00ffa3);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 600;
       text-decoration: none;
-      background: #2980b9;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 5px;
-      margin-bottom: 15px;
+      transition: all 0.3s;
     }
-    a:hover { background: #1c5985; }
+
+    .buttons a.btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px #00ffa3;
+    }
   </style>
 </head>
 <body>
-  <a href="/">← Back to Home</a>
-  <h1>Prediction History</h1>
+  <div class="background"></div>
+  <div class="wrapper">
+    <div class="form-card">
+      <h1><i class="fa-solid fa-clock-rotate-left"></i> Prediction History</h1>
 
-  {% if records %}
-  <table>
-    <tr>
-      {% for key in records[0].keys() %}
-        <th>{{ key.replace('_', ' ').title() }}</th>
-      {% endfor %}
-    </tr>
-    {% for row in records %}
-      <tr>
-        {% for key, value in row.items() %}
-          {% if key == 'predicted_label' %}
-            <td class="{{ value }}">{{ value|title }}</td>
-          {% else %}
-            <td>{{ value }}</td>
-          {% endif %}
-        {% endfor %}
-      </tr>
-    {% endfor %}
-  </table>
-  {% else %}
-    <p style="text-align:center; color:gray;">No predictions found yet.</p>
-  {% endif %}
+      {% if records %}
+      <div style="overflow-x:auto; margin-top:15px;">
+        <table>
+          <tr>
+            {% for key in records[0].keys() %}
+              <th>{{ (key or '').replace('_',' ').title() }}</th>
+            {% endfor %}
+          </tr>
+          {% for row in records %}
+            <tr>
+              {% for key, value in row.items() %}
+                {% if key == 'predicted_label' %}
+                  <td class="{{ value }}">{{ value|title }}</td>
+                {% else %}
+                  <td>{{ value or '' }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+      {% else %}
+        <p style="text-align:center; margin-top:20px;">No predictions found yet.</p>
+      {% endif %}
+
+      <div class="buttons">
+        <a href="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Form</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

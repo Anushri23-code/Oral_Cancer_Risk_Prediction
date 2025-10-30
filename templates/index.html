@@ -1,121 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oral Cancer Risk Prediction</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f6fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      width: 450px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 12px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    button {
-      width: 100%;
-      background: #3498db;
-      color: white;
-      border: none;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #2980b9;
-    }
-  </style>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Oral Cancer Risk Prediction</h1>
-    <form method="POST">
+  <div class="background"></div>
 
-      <label>Name:</label>
-      <input type="text" name="name" required>
+  <div class="wrapper">
+    <div class="form-card">
+      <h1><i class="fa-solid fa-tooth"></i> Oral Cancer Risk Prediction</h1>
 
-      <label>Age:</label>
-      <input type="number" name="age" min="1" max="120" required>
+      <!-- Progress Indicator -->
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+        <div class="progress-steps">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
 
-      <label>Gender:</label>
-      <select name="gender" required>
-        <option>Male</option>
-        <option>Female</option>
-      </select>
+      <form id="multiStepForm" method="POST">
 
-      <label>Smoker:</label>
-      <select name="smoker" required>
-        <option>no</option>
-        <option>yes</option>
-      </select>
+        <!-- STEP 1: Personal Info -->
+        <div class="step active">
+          <div class="input-group">
+            <label><i class="fa-solid fa-user"></i> Name</label>
+            <input type="text" name="name" placeholder="Enter full name" required />
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-hourglass-half"></i> Age</label>
+            <input type="number" name="age" min="1" max="120" placeholder="Enter your age" required />
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-venus-mars"></i> Gender</label>
+            <select name="gender" required>
+              <option value="">Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-globe"></i> Country</label>
+            <input type="text" name="country" placeholder="Enter your country" required />
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="nextStep()">Next →</button>
+          </div>
+        </div>
 
-      <label>Alcohol Consumption:</label>
-      <select name="alcohol" required>
-        <option>none</option>
-        <option>light</option>
-        <option>heavy</option>
-      </select>
+        <!-- STEP 2: Lifestyle -->
+        <div class="step">
+          <div class="input-group">
+            <label><i class="fa-solid fa-smoking"></i> Smoker</label>
+            <select name="smoker" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-wine-glass"></i> Alcohol Consumption</label>
+            <select name="alcohol" required>
+              <option>none</option>
+              <option>light</option>
+              <option>heavy</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-circle-question"></i> Betel Quid Use</label>
+            <select name="betel_quid_use" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="prevStep()">← Back</button>
+            <button type="button" onclick="nextStep()">Next →</button>
+          </div>
+        </div>
 
-      <label>White Patches in Mouth:</label>
-      <select name="white_patches" required>
-        <option>no</option>
-        <option>yes</option>
-      </select>
+        <!-- STEP 3: Medical History -->
+        <div class="step">
+          <div class="input-group">
+            <label><i class="fa-solid fa-virus"></i> HPV Infection</label>
+            <select name="hpv" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-dna"></i> Family History of Cancer</label>
+            <select name="genetics" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-shield-virus"></i> Compromised Immune System</label>
+            <select name="immune_compromised" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="prevStep()">← Back</button>
+            <button type="button" onclick="nextStep()">Next →</button>
+          </div>
+        </div>
 
-      <label>Human Papillomavirus (HPV) Infection:</label>
-      <select name="hpv" required>
-        <option>no</option>
-        <option>yes</option>
-      </select>
+        <!-- STEP 4: Oral Health -->
+        <div class="step">
+          <div class="input-group">
+            <label><i class="fa-solid fa-teeth"></i> Chronic Irritation</label>
+            <select name="chronic_irritation" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-hand-sparkles"></i> Poor Oral Hygiene</label>
+            <select name="poor_oral_hygiene" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-leaf"></i> Diet</label>
+            <select name="diet" required>
+              <option>low</option>
+              <option>moderate</option>
+              <option>high</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-tooth"></i> Oral Lesions</label>
+            <select name="oral_lesions" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="prevStep()">← Back</button>
+            <button type="button" onclick="nextStep()">Next →</button>
+          </div>
+        </div>
 
-      <label>Genetic History of Cancer:</label>
-      <select name="genetics" required>
-        <option>no</option>
-        <option>yes</option>
-      </select>
+        <!-- STEP 5: Symptoms -->
+        <div class="step">
+          <div class="input-group">
+            <label><i class="fa-solid fa-circle"></i> White or Red Patches</label>
+            <select name="white_patches" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-notes-medical"></i> Difficulty Swallowing</label>
+            <select name="difficulty_swallowing" required>
+              <option>no</option>
+              <option>yes</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-teeth-open "></i> Oral Condition</label>
+            <select name="difficulty_swallowing" required>
+              <option>good</option>
+              <option>moderate</option>
+              <option>poor</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label><i class="fa-solid fa-stethoscope"></i> Describe Symptoms</label>
+            <textarea name="symptoms_text" rows="3" placeholder="Describe symptoms..." required></textarea>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="prevStep()">← Back</button>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Predict Risk</button>
+          </div>
+        </div>
+      </form>
 
-      <label>Chronic Irritation (e.g., dentures, sharp tooth):</label>
-      <select name="chronic_irritation" required>
-        <option>no</option>
-        <option>yes</option>
-      </select>
-
-      <label>Overall Oral Condition:</label>
-      <select name="oral_condition" required>
-        <option>good</option>
-        <option>moderate</option>
-        <option>poor</option>
-      </select>
-
-      <label>Describe Symptoms (text):</label>
-      <textarea name="symptoms_text" rows="3" placeholder="Describe any symptoms..." required></textarea>
-
-      <button type="submit">Predict Risk</button>
-    </form>
+      <div class="footer">
+        <p>Need help? <a href="/history">View Previous Predictions</a></p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll(".step");
+    const dots = document.querySelectorAll(".dot");
+    const progressBar = document.querySelector(".progress-bar");
+
+    function showStep(index) {
+      steps.forEach((s, i) => s.classList.toggle("active", i === index));
+      dots.forEach((d, i) => d.classList.toggle("active", i <= index));
+      progressBar.style.width = ((index + 1) / steps.length) * 100 + "%";
+    }
+
+    function nextStep() {
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    }
+
+    function prevStep() {
+      if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    }
+
+    showStep(0);
+  </script>
 </body>
+
 </html>

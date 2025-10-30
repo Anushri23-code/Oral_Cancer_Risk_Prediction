@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="auth-card">
-    <h2>Login</h2>
-    {% if error %}
-        <p class="error">{{ error }}</p>
-    {% endif %}
-    <form method="POST" autocomplete="off">
-        <input type="text" name="username" placeholder="Enter username" required autocomplete="off">
-        <input type="password" name="password" placeholder="Enter password" required autocomplete="new-password">
-        <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
-</div>
+  <div class="background"></div>
+
+  <div class="wrapper">
+    <div class="form-card">
+      <h1><i class="fa-solid fa-right-to-bracket"></i> Login</h1>
+
+      {% if error %}
+        <p style="color: #ff6b6b; text-align:center; font-weight:500;">{{ error }}</p>
+      {% endif %}
+
+      <form method="POST" autocomplete="off">
+        <div class="input-group">
+          <label><i class="fa-solid fa-user"></i> Username</label>
+          <input type="text" name="username" placeholder="Enter username" required autocomplete="off">
+        </div>
+
+        <div class="input-group">
+          <label><i class="fa-solid fa-lock"></i> Password</label>
+          <input type="password" name="password" placeholder="Enter password" required autocomplete="new-password">
+        </div>
+
+        <div class="buttons">
+          <button type="submit"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+        </div>
+      </form>
+
+      <div class="footer">
+        <p>Don’t have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 </body>
 </html>
