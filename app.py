@@ -16,21 +16,31 @@ app.secret_key = "supersecretkey"  # Needed for session management
 # -----------------------
 USERS_FILE = "data/users.csv"
 
+# ✅ FIXED VERSION (prevents KeyError for 'email' or 'phone')
 def load_users():
     if not os.path.exists(USERS_FILE):
-        return {}
+        return []
+    users = []
     with open(USERS_FILE, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        return {row['username']: row['password'] for row in reader}
+        for row in reader:
+            users.append({
+                "email": row.get("email", "").strip(),
+                "phone": row.get("phone", "").strip(),
+                "password": row.get("password", "")
+            })
+    return users
 
-def save_user(username, password):
+
+def save_user(email, phone, password):
     os.makedirs("data", exist_ok=True)
     file_exists = os.path.isfile(USERS_FILE)
     with open(USERS_FILE, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["username", "password"])
+        writer = csv.DictWriter(f, fieldnames=["email", "phone", "password"])
         if not file_exists:
             writer.writeheader()
-        writer.writerow({"username": username, "password": password})
+        writer.writerow({"email": email, "phone": phone, "password": password})
+
 
 # -----------------------
 # Load trained model
@@ -62,12 +72,14 @@ def save_prediction(record):
             record.setdefault(field, "")
         writer.writerow(record)
 
+
 # -----------------------
 # Welcome Page
 # -----------------------
 @app.route("/")
 def welcome():
     return render_template("welcome.html")
+
 
 # -----------------------
 # Login Page
@@ -76,14 +88,22 @@ def welcome():
 def login():
     users = load_users()
     if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
-        if username in users and users[username] == password:
-            session["username"] = username  # ✅ Save logged-in user in session
-            return redirect(url_for("index"))
-        else:
-            return render_template("login.html", error="Invalid username or password")
+        login_type = request.form.get("login_type")
+        value = request.form.get("email_or_phone")
+        password = request.form.get("password")
+
+        for user in users:
+            if (
+                (login_type == "email" and user["email"] == value)
+                or (login_type == "phone" and user["phone"] == value)
+            ) and user["password"] == password:
+                session["username"] = value
+                return redirect(url_for("index"))
+
+        return render_template("login.html", error="Invalid credentials")
+
     return render_template("login.html")
+
 
 # -----------------------
 # Logout Route
@@ -93,6 +113,7 @@ def logout():
     session.pop("username", None)
     return redirect(url_for("login"))
 
+
 # -----------------------
 # Register Page
 # -----------------------
@@ -100,27 +121,41 @@ def logout():
 def register():
     users = load_users()
     if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
-        if username in users:
-            return render_template("register.html", error="User already exists")
-        save_user(username, password)
-        return redirect(url_for("login"))
+        reg_type = request.form.get("register_type")
+        value = request.form.get("email_or_phone")
+        password = request.form.get("password")
+        confirm = request.form.get("confirm_password")
+
+        if password != confirm:
+            return render_template("register.html", error="Passwords do not match")
+
+        # Check existing user
+        for user in users:
+            if (reg_type == "email" and user["email"] == value) or (
+                reg_type == "phone" and user["phone"] == value
+            ):
+                return render_template("register.html", error="User already exists")
+
+        # Save user
+        email = value if reg_type == "email" else ""
+        phone = value if reg_type == "phone" else ""
+        save_user(email, phone, password)
+
+        return render_template("register.html", success="Registration successful! Please login.")
+
     return render_template("register.html")
+
 
 # -----------------------
 # Prediction Page
 # -----------------------
 @app.route("/index", methods=["GET", "POST"])
 def index():
-    # Make sure user is logged in
     if "username" not in session:
         return redirect(url_for("login"))
 
     if request.method == "POST":
-        username = session["username"]  # ✅ Logged-in user
-
-        # Capture form data
+        username = session["username"]
         name = request.form.get("name")
         age = request.form.get("age", type=int)
         gender = request.form.get("gender")
@@ -140,7 +175,6 @@ def index():
         oral_condition = request.form.get("oral_condition")
         symptoms_text = request.form.get("symptoms_text", "")
 
-        # Prepare input for model
         X_input = pd.DataFrame([{
             "age": age,
             "gender": gender,
@@ -160,15 +194,13 @@ def index():
             "symptoms_text": symptoms_text
         }])
 
-        # Model Prediction
         probs = model.predict_proba(X_input)[0]
         classes = model.classes_
         pred_label = classes[probs.argmax()]
         pred_prob = probs.max()
 
-        # Save prediction
         record = {
-            "username": username,  # ✅ store username
+            "username": username,
             "timestamp": datetime.now().isoformat(),
             "name": name,
             "age": age,
@@ -204,6 +236,7 @@ def index():
 
     return render_template("index.html")
 
+
 # -----------------------
 # Prediction History Page
 # -----------------------
@@ -216,12 +249,11 @@ def history():
     try:
         with open(csv_path, newline='', encoding='utf-8') as f:
             reader = csv.DictReader(f)
-            records = [row for row in reader if any(row.values())]  # ignore empty rows
+            records = [row for row in reader if any(row.values())]
 
         if not records:
             return render_template("history.html", records=[])
 
-        # ✅ Ensure new fields always appear even if old CSV doesn’t have them
         expected_fields = [
             "timestamp", "name", "age", "gender", "country",
             "smoker", "alcohol", "betel_quid_use", "hpv", "genetics",
@@ -233,9 +265,8 @@ def history():
         all_keys = set(expected_fields)
         for r in records:
             for k in all_keys:
-                r.setdefault(k, "")  # fill missing columns
+                r.setdefault(k, "")
 
-        # ✅ Reorder all columns according to expected_fields
         ordered_records = [
             {key: r.get(key, "") for key in expected_fields}
             for r in records

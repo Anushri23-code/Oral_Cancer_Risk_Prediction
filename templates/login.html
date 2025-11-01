@@ -6,6 +6,43 @@
   <title>Login</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .toggle-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      background: #f0f0f0;
+      border-radius: 30px;
+      position: relative;
+      width: 240px;
+      margin: 0 auto 20px;
+      overflow: hidden;
+    }
+    .toggle-btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: #333;
+      z-index: 2;
+      transition: color 0.3s ease;
+    }
+    .toggle-slider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      background-color: #008CBA;
+      border-radius: 30px;
+      transition: left 0.3s ease;
+      z-index: 1;
+    }
+    .toggle-btn.active {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
   <div class="background"></div>
@@ -19,9 +56,17 @@
       {% endif %}
 
       <form method="POST" autocomplete="off">
+        <input type="hidden" name="login_type" id="login_type" value="email">
+
+        <div class="toggle-container">
+          <div class="toggle-slider" id="toggle-slider"></div>
+          <div class="toggle-btn active" id="emailToggle">Email</div>
+          <div class="toggle-btn" id="phoneToggle">Phone</div>
+        </div>
+
         <div class="input-group">
-          <label><i class="fa-solid fa-user"></i> Username</label>
-          <input type="text" name="username" placeholder="Enter username" required autocomplete="off">
+          <label id="inputLabel"><i class="fa-solid fa-envelope"></i> Email</label>
+          <input type="text" name="email_or_phone" id="email_or_phone" placeholder="Enter your email" required autocomplete="off">
         </div>
 
         <div class="input-group">
@@ -39,6 +84,35 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script>
+    const emailToggle = document.getElementById("emailToggle");
+    const phoneToggle = document.getElementById("phoneToggle");
+    const toggleSlider = document.getElementById("toggle-slider");
+    const loginType = document.getElementById("login_type");
+    const inputLabel = document.getElementById("inputLabel");
+    const inputField = document.getElementById("email_or_phone");
+
+    emailToggle.addEventListener("click", () => {
+      emailToggle.classList.add("active");
+      phoneToggle.classList.remove("active");
+      toggleSlider.style.left = "0";
+      loginType.value = "email";
+      inputLabel.innerHTML = '<i class="fa-solid fa-envelope"></i> Email';
+      inputField.placeholder = "Enter your email";
+      inputField.type = "email";
+    });
+
+    phoneToggle.addEventListener("click", () => {
+      phoneToggle.classList.add("active");
+      emailToggle.classList.remove("active");
+      toggleSlider.style.left = "50%";
+      loginType.value = "phone";
+      inputLabel.innerHTML = '<i class="fa-solid fa-phone"></i> Phone';
+      inputField.placeholder = "Enter your phone number";
+      inputField.type = "tel";
+    });
+  </script>
 </body>
 </html>
