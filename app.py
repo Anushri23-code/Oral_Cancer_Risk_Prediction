@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 import pandas as pd
 import joblib
 import os
@@ -83,25 +83,34 @@ def welcome():
 # -----------------------
 # Login Page
 # -----------------------
-@app.route("/login", methods=["GET", "POST"])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    users = load_users()
-    if request.method == "POST":
-        login_type = request.form.get("login_type")
-        value = request.form.get("email_or_phone")
-        password = request.form.get("password")
+    if request.method == 'POST':
+        login_type = request.form.get('login_type')
+        email_or_phone = request.form.get('email_or_phone')
+        password = request.form.get('password')
 
+        # Admin login check
+        if email_or_phone == 'admin@gmail.com' and password == 'admin@123':
+            session['username'] = 'admin'
+            return redirect(url_for('admin_page'))
+
+        # Patient login check (CSV-based)
+        users = load_users()
         for user in users:
-            if (
-                (login_type == "email" and user["email"] == value)
-                or (login_type == "phone" and user["phone"] == value)
-            ) and user["password"] == password:
-                session["username"] = value
-                return redirect(url_for("index"))
+            if login_type == 'email' and user['email'] == email_or_phone and user['password'] == password:
+                session['username'] = user['email']
+                return redirect(url_for('index'))
+            elif login_type == 'phone' and user['phone'] == email_or_phone and user['password'] == password:
+                session['username'] = user['phone']
+                return redirect(url_for('index'))
 
-        return render_template("login.html", error="Invalid credentials")
+        # If no match
+        error = "Invalid credentials. Please try again."
+        return render_template('login.html', error=error)
 
-    return render_template("login.html")
+    return render_template('login.html')
+
 
 
 # -----------------------
@@ -111,7 +120,6 @@ def login():
 def logout():
     session.pop("username", None)
     return redirect(url_for("login"))
-
 
 # -----------------------
 # Register Page
@@ -280,9 +288,32 @@ def history():
     except Exception as e:
         return f"<h3 style='color:red;'>Error loading history: {e}</h3>"
 
+# --- Admin Dashboard Routes ---
+
+@app.route('/admin_page')
+def admin_page():
+    user = session.get('username')  
+    if user != 'admin':
+        flash("Access denied. Admins only.")
+        return redirect(url_for('login'))
+
+    try:
+        df = pd.read_csv('data/predictions.csv')
+        if df.empty:
+            flash("No patient data yet.")
+            return render_template('admin_page.html', tables=None)
+        else:
+            table_data = df.to_dict(orient='records')
+            columns = df.columns.tolist()
+            return render_template('admin_page.html', tables=table_data, columns=columns)
+    except FileNotFoundError:
+        flash("Prediction data file not found.")
+        return render_template('admin_page.html', tables=None)
+
 
 # -----------------------
 # Run Flask app
 # -----------------------
+
 if __name__ == "__main__":
     app.run(debug=True)

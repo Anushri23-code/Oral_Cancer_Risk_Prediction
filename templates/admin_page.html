@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prediction History</title>
+  <title>Admin Dashboard</title>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     table {
       width: 100%;
@@ -59,42 +60,54 @@
       transform: translateY(-2px);
       box-shadow: 0 0 12px #00ffa3;
     }
+
+    .no-data {
+      text-align: center;
+      font-weight: 500;
+      color: #fff;
+      margin-top: 15px;
+    }
   </style>
 </head>
+
 <body>
   <div class="background"></div>
+
   <div class="wrapper">
     <div class="form-card">
-      <h1><i class="fa-solid fa-clock-rotate-left"></i> Prediction History</h1>
+      <h1><i class="fa-solid fa-user-shield"></i> Admin Dashboard</h1>
 
-      {% if records %}
+      {% if tables %}
       <div style="overflow-x:auto; margin-top:15px;">
         <table>
-          <tr>
-            {% for key in records[0].keys() %}
-              <th>{{ (key or '').replace('_',' ').title() }}</th>
-            {% endfor %}
-          </tr>
-          {% for row in records %}
+          <thead>
             <tr>
-              {% for key, value in row.items() %}
-                {% if key == 'predicted_label' %}
-                  <td class="{{ value }}">{{ value|title }}</td>
+              {% for col in columns %}
+                <th>{{ (col or '').replace('_',' ').title() }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in tables %}
+            <tr>
+              {% for col in columns %}
+                {% if col == 'predicted_label' %}
+                  <td class="{{ row[col] }}">{{ row[col]|title }}</td>
                 {% else %}
-                  <td>{{ value or '' }}</td>
+                  <td>{{ row[col] or '' }}</td>
                 {% endif %}
               {% endfor %}
             </tr>
-          {% endfor %}
+            {% endfor %}
+          </tbody>
         </table>
       </div>
       {% else %}
-        <p style="text-align:center; margin-top:20px;">No predictions found yet.</p>
+        <p class="no-data">No patient data available yet.</p>
       {% endif %}
 
       <div class="buttons">
-        <a href="{{ url_for('index') }}" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Form</a>
-
+        <a href="/logout" class="btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
       </div>
     </div>
   </div>
