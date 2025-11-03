@@ -55,7 +55,7 @@
         <p style="color: #ff6b6b; text-align:center; font-weight:500;">{{ error }}</p>
       {% endif %}
 
-      <form method="POST" autocomplete="off">
+      <form method="POST" autocomplete="off" id="loginForm">
         <input type="hidden" name="login_type" id="login_type" value="email">
 
         <div class="toggle-container">
@@ -65,8 +65,16 @@
         </div>
 
         <div class="input-group">
-          <label id="inputLabel"><i class="fa-solid fa-envelope"></i> Email</label>
-          <input type="text" name="email_or_phone" id="email_or_phone" placeholder="Enter your email" required autocomplete="off">
+          <label id="inputLabel"><i class="fa-solid fa-envelope"></i> Gmail</label>
+          <input 
+            type="email" 
+            name="email_or_phone" 
+            id="email_or_phone" 
+            placeholder="Enter your Gmail" 
+            required 
+            autocomplete="off"
+            pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+            title="Please enter a valid Gmail address (example@gmail.com)">
         </div>
 
         <div class="input-group">
@@ -93,17 +101,23 @@
     const loginType = document.getElementById("login_type");
     const inputLabel = document.getElementById("inputLabel");
     const inputField = document.getElementById("email_or_phone");
+    const form = document.getElementById("loginForm");
 
+    // Switch to Gmail
     emailToggle.addEventListener("click", () => {
       emailToggle.classList.add("active");
       phoneToggle.classList.remove("active");
       toggleSlider.style.left = "0";
       loginType.value = "email";
-      inputLabel.innerHTML = '<i class="fa-solid fa-envelope"></i> Email';
-      inputField.placeholder = "Enter your email";
+      inputLabel.innerHTML = '<i class="fa-solid fa-envelope"></i> Gmail';
+      inputField.placeholder = "Enter your Gmail";
       inputField.type = "email";
+      inputField.value = "";
+      inputField.pattern = "^[a-zA-Z0-9._%+-]+@gmail\\.com$";
+      inputField.title = "Please enter a valid Gmail address (example@gmail.com)";
     });
 
+    // Switch to Phone
     phoneToggle.addEventListener("click", () => {
       phoneToggle.classList.add("active");
       emailToggle.classList.remove("active");
@@ -112,6 +126,29 @@
       inputLabel.innerHTML = '<i class="fa-solid fa-phone"></i> Phone';
       inputField.placeholder = "Enter your phone number";
       inputField.type = "tel";
+      inputField.value = "";
+      inputField.pattern = "^[6-9]\\d{9}$"; // Indian 10-digit phone numbers
+      inputField.title = "Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9";
+    });
+
+    // Final validation before submit
+    form.addEventListener("submit", function(e) {
+      const type = loginType.value;
+      const value = inputField.value.trim();
+
+      if (type === "email") {
+        const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if (!gmailRegex.test(value)) {
+          e.preventDefault();
+          alert("Only valid Gmail addresses are allowed (e.g., example@gmail.com)");
+        }
+      } else if (type === "phone") {
+        const phoneRegex = /^[6-9]\d{9}$/;
+        if (!phoneRegex.test(value)) {
+          e.preventDefault();
+          alert("Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9");
+        }
+      }
     });
   </script>
 </body>

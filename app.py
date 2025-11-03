@@ -16,7 +16,6 @@ app.secret_key = "supersecretkey"  # Needed for session management
 # -----------------------
 USERS_FILE = "data/users.csv"
 
-# ✅ FIXED VERSION (prevents KeyError for 'email' or 'phone')
 def load_users():
     if not os.path.exists(USERS_FILE):
         return []
@@ -238,10 +237,14 @@ def index():
 
 
 # -----------------------
-# Prediction History Page
+# Prediction History Page (Shows only current user's records)
 # -----------------------
 @app.route("/history")
 def history():
+    if "username" not in session:
+        return redirect(url_for("login"))
+
+    current_user = session["username"]
     csv_path = "data/predictions.csv"
     if not os.path.exists(csv_path):
         return render_template("history.html", records=[])
@@ -249,7 +252,8 @@ def history():
     try:
         with open(csv_path, newline='', encoding='utf-8') as f:
             reader = csv.DictReader(f)
-            records = [row for row in reader if any(row.values())]
+            # ✅ Only show records that belong to the logged-in user
+            records = [row for row in reader if row.get("username") == current_user]
 
         if not records:
             return render_template("history.html", records=[])

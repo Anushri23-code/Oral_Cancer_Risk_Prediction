@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import joblib
 import random
 import string
@@ -28,26 +28,28 @@ def make_sample_dataset(path, n=1000, random_state=42):
         name = "user_" + ''.join(random.choices(string.ascii_lowercase + string.digits, k=6))
         age = random.randint(18, 80)
         gender = random.choice(["Male", "Female"])
-        smoker = random.choices(["yes","no"], weights=[0.35,0.65])[0]
-        alcohol = random.choices(["none","light","heavy"], weights=[0.6,0.25,0.15])[0]
-        betel_quid_use = random.choice(["yes","no"])
+        smoker = random.choices(["yes", "no"], weights=[0.35, 0.65])[0]
+        alcohol = random.choices(["none", "light", "heavy"], weights=[0.6, 0.25, 0.15])[0]
+        betel_quid_use = random.choice(["yes", "no"])
         symptom = random.choice(symptoms_examples)
         white_patches = random.choice(["yes", "no"])
         hpv = random.choice(["yes", "no"])
         genetics = random.choice(["yes", "no"])
-        immune_compromised = random.choice(["yes","no"])
+        immune_compromised = random.choice(["yes", "no"])
         chronic_irritation = random.choice(["yes", "no"])
-        poor_oral_hygiene = random.choice(["yes","no"])
-        diet = random.choice(["low","moderate","high"])
-        oral_lesions = random.choice(["yes","no"])
-        difficulty_swallowing = random.choice(["yes","no"])
-        oral_condition = random.choice(["good", "moderate", "poor"])  # optional, for risk calculation
+        poor_oral_hygiene = random.choice(["yes", "no"])
+        diet = random.choice(["low", "moderate", "high"])
+        oral_lesions = random.choice(["yes", "no"])
+        difficulty_swallowing = random.choice(["yes", "no"])
+        oral_condition = random.choice(["good", "moderate", "poor"])
 
-        # Risk score calculation (simplified example)
-        risk_score = 0
-        for val in [white_patches, hpv, genetics, chronic_irritation, smoker, alcohol=="heavy", oral_condition=="poor"]:
-            if val:
-                risk_score += 1
+        # ✅ More balanced risk scoring logic
+        risk_factors = [
+            white_patches, hpv, genetics, chronic_irritation,
+            smoker, alcohol == "heavy", oral_condition == "poor"
+        ]
+        risk_score = sum(1 for val in risk_factors if val == "yes" or val is True)
+        risk_score += random.choice([0, 0, 1])  # adds randomness to avoid only one label
 
         if risk_score <= 1:
             label = "low"
@@ -80,7 +82,8 @@ def make_sample_dataset(path, n=1000, random_state=42):
     df = pd.DataFrame(rows)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_csv(path, index=False)
-    print(f"Sample dataset written to: {path}")
+    print(f"✅ Sample dataset written to: {path}")
+    print(df['label'].value_counts())  # show balance of labels
     return df
 
 def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
@@ -93,7 +96,9 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
     ]]
     y = df["label"]
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42, stratify=y
+    )
 
     numeric_features = ["age"]
     categorical_features = [
@@ -106,7 +111,7 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
 
     numeric_transformer = Pipeline(steps=[("scaler", StandardScaler())])
     categorical_transformer = Pipeline(steps=[("onehot", OneHotEncoder(handle_unknown="ignore"))])
-    text_transformer = Pipeline(steps=[("tfidf", TfidfVectorizer(max_features=1000, ngram_range=(1,2)))])
+    text_transformer = Pipeline(steps=[("tfidf", TfidfVectorizer(max_features=1000, ngram_range=(1, 2)))])
 
     preprocessor = ColumnTransformer(transformers=[
         ("num", numeric_transformer, numeric_features),
@@ -121,14 +126,20 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
 
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
-    print("Evaluation on test set:")
+
+    # ✅ Print detailed results
+    print("\n📊 Evaluation on test set:")
     print(classification_report(y_test, y_pred))
     print("Confusion matrix:")
     print(confusion_matrix(y_test, y_pred))
 
+    # ✅ Add accuracy score
+    acc = accuracy_score(y_test, y_pred)
+    print(f"✅ Model Accuracy: {acc * 100:.2f}%")
+
     os.makedirs(os.path.dirname(out), exist_ok=True)
     joblib.dump(clf, out)
-    print(f"Saved trained pipeline to: {out}")
+    print(f"💾 Saved trained pipeline to: {out}")
 
 if __name__ == "__main__":
     train_and_save()
