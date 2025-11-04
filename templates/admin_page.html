@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Dashboard</title>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
@@ -67,14 +67,23 @@
       color: #fff;
       margin-top: 15px;
     }
+
+    /* Small safeguard so the table container doesn't overlap the global logout on narrow screens */
+    .content-area { padding-top: 10px; }
   </style>
 </head>
 
 <body>
   <div class="background"></div>
 
+  <!-- Global top-right logout button (uses .logout-btn in index.css) -->
+  <a href="{{ url_for('logout') }}" class="logout-btn" aria-label="Logout">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+  </a>
+
   <div class="wrapper">
-    <div class="form-card">
+    <div class="form-card content-area">
       <h1><i class="fa-solid fa-user-shield"></i> Admin Dashboard</h1>
 
       {% if tables %}
@@ -106,9 +115,6 @@
         <p class="no-data">No patient data available yet.</p>
       {% endif %}
 
-      <div class="buttons">
-        <a href="/logout" class="btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-      </div>
     </div>
   </div>
 </body>

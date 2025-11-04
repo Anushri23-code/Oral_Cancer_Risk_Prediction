@@ -14,6 +14,11 @@
 <body>
   <div class="background"></div>
 
+  <!-- 🔹 Global top-right Logout button -->
+  <a href="{{ url_for('logout') }}" class="logout-btn" aria-label="Logout">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+  </a>
+
   <div class="wrapper">
     <div class="form-card">
       <h1><i class="fa-solid fa-tooth"></i> Oral Cancer Risk Prediction</h1>
@@ -172,8 +177,8 @@
             </select>
           </div>
           <div class="input-group">
-            <label><i class="fa-solid fa-teeth-open "></i> Oral Condition</label>
-            <select name="difficulty_swallowing" required>
+            <label><i class="fa-solid fa-teeth-open"></i> Oral Condition</label>
+            <select name="oral_condition" required>
               <option>good</option>
               <option>moderate</option>
               <option>poor</option>

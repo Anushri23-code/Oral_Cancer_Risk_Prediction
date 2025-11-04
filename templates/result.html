@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     /* TABLE MODERN STYLE */
     table {
@@ -75,6 +76,12 @@
 </head>
 <body>
   <div class="background"></div>
+
+  <!-- 🔹 Top-right Logout Button -->
+  <a href="{{ url_for('logout') }}" class="logout-btn">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+  </a>
+
   <div class="wrapper">
     <div class="form-card">
       <h1><i class="fa-solid fa-tooth"></i> Prediction Result</h1>

@@ -63,6 +63,12 @@
 </head>
 <body>
   <div class="background"></div>
+
+  <!-- 🔹 Top-right Logout Button -->
+  <a href="{{ url_for('logout') }}" class="logout-btn">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+  </a>
+
   <div class="wrapper">
     <div class="form-card">
       <h1><i class="fa-solid fa-clock-rotate-left"></i> Prediction History</h1>
@@ -94,7 +100,6 @@
 
       <div class="buttons">
         <a href="{{ url_for('index') }}" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Form</a>
-
       </div>
     </div>
   </div>
