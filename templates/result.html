@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,28 +17,29 @@
       border-collapse: separate;
       border-spacing: 0;
       margin-top: 15px;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       overflow: hidden;
     }
 
-    th, td {
+    th,
+    td {
       padding: 12px 15px;
       color: #fff;
     }
 
     th {
-      background: rgba(0,212,255,0.6);
+      background: rgba(0, 212, 255, 0.6);
       font-weight: 600;
       text-align: left;
     }
 
     tr:nth-child(even) td {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     tr:hover td {
-      background: rgba(0,212,255,0.2);
+      background: rgba(0, 212, 255, 0.2);
       transition: 0.3s;
     }
 
@@ -49,12 +51,20 @@
       border-radius: 15px;
       font-size: 18px;
       font-weight: 600;
-      box-shadow: 0 0 15px rgba(0,212,255,0.4);
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
     }
 
-    .low { background: linear-gradient(135deg, #2ecc71, #27ae60); }
-    .medium { background: linear-gradient(135deg, #f1c40f, #f39c12); }
-    .high { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+    .low {
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+    }
+
+    .medium {
+      background: linear-gradient(135deg, #f1c40f, #f39c12);
+    }
+
+    .high {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+    }
 
     .buttons a.btn {
       display: inline-block;
@@ -72,12 +82,29 @@
       transform: translateY(-2px);
       box-shadow: 0 0 12px #00ffa3;
     }
+
+    /* CONFIDENCE BAR */
+    .confidence-bar {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      height: 14px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .confidence-fill {
+      height: 100%;
+      border-radius: 10px;
+      transition: width 1s ease-in-out;
+    }
   </style>
 </head>
+
 <body>
   <div class="background"></div>
 
-  <!-- 🔹 Top-right Logout Button -->
+  <!-- Logout Button -->
   <a href="{{ url_for('logout') }}" class="logout-btn">
     <i class="fa-solid fa-right-from-bracket"></i> Logout
   </a>
@@ -86,28 +113,80 @@
     <div class="form-card">
       <h1><i class="fa-solid fa-tooth"></i> Prediction Result</h1>
 
+      <!-- Patient Details -->
       <table>
-        <tr><th colspan="2"><i class="fa-solid fa-user"></i> Patient Details</th></tr>
+        <tr>
+          <th colspan="2"><i class="fa-solid fa-user"></i> Patient Details</th>
+        </tr>
         {% for key, value in record.items() %}
-          {% if key not in ['predicted_label', 'predicted_prob', 'timestamp'] %}
-            <tr>
-              <td><strong>{{ key.replace('_', ' ').title() }}</strong></td>
-              <td>{{ value }}</td>
-            </tr>
-          {% endif %}
+        {% if key not in ['predicted_label', 'predicted_prob', 'timestamp'] %}
+        <tr>
+          <td><strong>{{ key.replace('_', ' ').title() }}</strong></td>
+          <td>{{ value }}</td>
+        </tr>
+        {% endif %}
         {% endfor %}
       </table>
 
+      <!-- Prediction Result -->
       <div class="result {{ label }}">
         <h2><i class="fa-solid fa-heart-pulse"></i> Predicted Risk: {{ label|title }}</h2>
-        <p>Confidence: {{ prob * 100 }}%</p>
-      </div>
+        <p>Confidence: {{ (prob * 100) | round(2) }}%</p>
 
-      <div class="buttons">
-        <a href="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Form</a>
-        <a href="/history" class="btn"><i class="fa-solid fa-clock-rotate-left"></i> View History</a>
+        <!-- Confidence Bar -->
+        <div class="confidence-bar">
+          <div class="confidence-fill" style="
+                 width: {{ prob * 100 }}%;
+                 background:
+                   {% if prob*100 < 60 %}#e74c3c
+                   {% elif prob*100 < 80 %}#f1c40f
+                   {% else %}#2ecc71
+                   {% endif %};
+               ">
+          </div>
+        </div>
+
+        <!-- Doctor Advice -->
+        <!-- Doctor Advice -->
+        {% if label == 'high' %}
+        <p style="color:#ffb3b3; margin-top:8px;">
+          🚨 High risk detected! Please consult a doctor immediately for further examination.
+        </p>
+
+        {% elif label == 'medium' %}
+        <p style="color:#ffe6b3; margin-top:8px;">
+          ⚠️ Moderate risk detected. Consultation with a doctor is strongly recommended.
+        </p>
+
+        {% elif label == 'low' %}
+        <p style="color:#b3ffb3; margin-top:8px;">
+          ✅ Low risk prediction — continue regular oral checkups for safety.
+        </p>
+        {% endif %}
+
+
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <a href="/index" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to Form</a>
+          <a href="/history" class="btn"><i class="fa-solid fa-clock-rotate-left"></i> View History</a>
+        </div>
       </div>
     </div>
-  </div>
+
+    <!-- Confidence Animation -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const fill = document.querySelector('.confidence-fill');
+        const width = fill.style.width;
+        fill.style.width = '0';
+        setTimeout(() => {
+          fill.style.width = width;
+        }, 200);
+      });
+    </script>
+
 </body>
+
 </html>
