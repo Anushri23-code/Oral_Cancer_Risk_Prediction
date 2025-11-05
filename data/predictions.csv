@@ -4,3 +4,8 @@ username,timestamp,name,age,gender,country,smoker,alcohol,betel_quid_use,hpv,gen
 6767676767,2025-11-02T09:11:19.885948,abc,78,Male,india,no,none,no,no,yes,no,no,no,low,no,no,no,,nothing,low,0.6431141129085219
 abc@gmail.com,2025-11-03T15:12:06.242264,Coder,34,Female,India,yes,light,yes,no,yes,yes,no,yes,low,yes,no,yes,,light bleeding,medium,0.9451868309372535
 abc@gmail.com,2025-11-03T18:14:23.645862,Coder,34,Female,India,yes,light,yes,no,yes,yes,yes,yes,low,yes,yes,yes,,none,high,0.9816377716247424
+abc@gmail.com,2025-11-05T11:17:50.614572,ash,25,Female,india,yes,light,no,no,yes,yes,no,no,low,no,no,yes,good,bleeding,medium,0.9313504765312941
+abc@gmail.com,2025-11-05T12:36:21.716270,ash,25,Female,india,yes,light,no,no,yes,no,no,no,low,no,no,yes,good,numbness,medium,0.562010304388815
+abc@gmail.com,2025-11-05T12:41:07.063159,ash,25,Female,india,no,none,no,no,no,no,no,no,low,no,no,no,good,nothing,low,0.6227081770119383
+abc@gmail.com,2025-11-05T12:49:59.813581,ash,25,Female,india,no,light,yes,no,yes,yes,no,yes,moderate,no,no,yes,moderate,sore throat,medium,0.6241614022249831
+abc@gmail.com,2025-11-05T12:56:57.347469,ash,25,Female,india,yes,light,yes,no,yes,no,no,no,low,no,no,no,good,sore throat,high,0.5062034829090897

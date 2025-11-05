@@ -182,6 +182,7 @@ def index():
         oral_condition = request.form.get("oral_condition")
         symptoms_text = request.form.get("symptoms_text", "")
 
+        # ✅ Create input DataFrame
         X_input = pd.DataFrame([{
             "age": age,
             "gender": gender,
@@ -201,11 +202,22 @@ def index():
             "symptoms_text": symptoms_text
         }])
 
+        # ✅ Compute lifestyle_risk (same logic as in training)
+        X_input["lifestyle_risk"] = 0
+        if smoker == "yes":
+            X_input["lifestyle_risk"] += 1
+        if alcohol == "heavy":
+            X_input["lifestyle_risk"] += 1
+        if betel_quid_use == "yes":
+            X_input["lifestyle_risk"] += 1
+
+        # ✅ Predict
         probs = model.predict_proba(X_input)[0]
         classes = model.classes_
         pred_label = classes[probs.argmax()]
         pred_prob = probs.max()
 
+        # ✅ Save record
         record = {
             "username": username,
             "timestamp": datetime.now().isoformat(),

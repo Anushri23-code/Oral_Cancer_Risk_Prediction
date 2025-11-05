@@ -7,8 +7,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.ensemble import RandomForestClassifier
 import joblib
 import random
 import string
@@ -16,6 +16,9 @@ import string
 SAMPLE_CSV = "data/sample_oral_cancer.csv"
 MODEL_OUT = "model/pipeline.joblib"
 
+# ======================================================
+# 🧠 STEP 1: Create a more realistic, weighted dataset
+# ======================================================
 def make_sample_dataset(path, n=1000, random_state=42):
     random.seed(random_state)
     np.random.seed(random_state)
@@ -43,17 +46,25 @@ def make_sample_dataset(path, n=1000, random_state=42):
         difficulty_swallowing = random.choice(["yes", "no"])
         oral_condition = random.choice(["good", "moderate", "poor"])
 
-        # ✅ More balanced risk scoring logic
-        risk_factors = [
-            white_patches, hpv, genetics, chronic_irritation,
-            smoker, alcohol == "heavy", oral_condition == "poor"
-        ]
-        risk_score = sum(1 for val in risk_factors if val == "yes" or val is True)
-        risk_score += random.choice([0, 0, 1])  # adds randomness to avoid only one label
+        # ✅ Weighted risk scoring logic for stronger correlations
+        risk_score = 0
+        if smoker == "yes": risk_score += 3
+        if alcohol == "heavy": risk_score += 3
+        if betel_quid_use == "yes": risk_score += 2
+        if white_patches == "yes": risk_score += 2
+        if hpv == "yes": risk_score += 1
+        if genetics == "yes": risk_score += 1
+        if immune_compromised == "yes": risk_score += 1
+        if chronic_irritation == "yes": risk_score += 2
+        if poor_oral_hygiene == "yes": risk_score += 1
+        if oral_condition == "poor": risk_score += 3
+        if oral_lesions == "yes": risk_score += 2
+        if difficulty_swallowing == "yes": risk_score += 1
+        risk_score += random.choice([0, 1])  # small randomness
 
-        if risk_score <= 1:
+        if risk_score <= 3:
             label = "low"
-        elif risk_score <= 3:
+        elif risk_score <= 7:
             label = "medium"
         else:
             label = "high"
@@ -80,19 +91,34 @@ def make_sample_dataset(path, n=1000, random_state=42):
         })
 
     df = pd.DataFrame(rows)
+
+    # Add combined lifestyle risk feature (numeric)
+    df["lifestyle_risk"] = df.apply(
+        lambda row: sum([
+            row["smoker"] == "yes",
+            row["alcohol"] == "heavy",
+            row["betel_quid_use"] == "yes"
+        ]),
+        axis=1
+    )
+
     os.makedirs(os.path.dirname(path), exist_ok=True)
     df.to_csv(path, index=False)
     print(f"✅ Sample dataset written to: {path}")
-    print(df['label'].value_counts())  # show balance of labels
+    print(df['label'].value_counts())
     return df
 
+# ======================================================
+# ⚙️ STEP 2: Train + Evaluate the RandomForest model
+# ======================================================
 def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
     df = make_sample_dataset(path)
     X = df[[
         "age", "gender", "smoker", "alcohol", "betel_quid_use",
         "white_patches", "hpv", "genetics", "immune_compromised",
         "chronic_irritation", "poor_oral_hygiene", "diet",
-        "oral_lesions", "difficulty_swallowing", "oral_condition", "symptoms_text"
+        "oral_lesions", "difficulty_swallowing", "oral_condition",
+        "symptoms_text", "lifestyle_risk"
     ]]
     y = df["label"]
 
@@ -100,7 +126,7 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
         X, y, test_size=0.2, random_state=42, stratify=y
     )
 
-    numeric_features = ["age"]
+    numeric_features = ["age", "lifestyle_risk"]
     categorical_features = [
         "gender", "smoker", "alcohol", "betel_quid_use",
         "white_patches", "hpv", "genetics", "immune_compromised",
@@ -111,7 +137,7 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
 
     numeric_transformer = Pipeline(steps=[("scaler", StandardScaler())])
     categorical_transformer = Pipeline(steps=[("onehot", OneHotEncoder(handle_unknown="ignore"))])
-    text_transformer = Pipeline(steps=[("tfidf", TfidfVectorizer(max_features=1000, ngram_range=(1, 2)))])
+    text_transformer = Pipeline(steps=[("tfidf", TfidfVectorizer(max_features=5000, ngram_range=(1, 3)))])
 
     preprocessor = ColumnTransformer(transformers=[
         ("num", numeric_transformer, numeric_features),
@@ -121,19 +147,25 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
 
     clf = Pipeline(steps=[
         ("preprocessor", preprocessor),
-        ("classifier", LogisticRegression(max_iter=1000))
+        ("classifier", RandomForestClassifier(
+            n_estimators=500,
+            max_depth=18,
+            min_samples_split=3,
+            min_samples_leaf=2,
+            random_state=42,
+            class_weight="balanced_subsample"
+        ))
     ])
 
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
 
-    # ✅ Print detailed results
+    # Evaluation
     print("\n📊 Evaluation on test set:")
     print(classification_report(y_test, y_pred))
     print("Confusion matrix:")
     print(confusion_matrix(y_test, y_pred))
 
-    # ✅ Add accuracy score
     acc = accuracy_score(y_test, y_pred)
     print(f"✅ Model Accuracy: {acc * 100:.2f}%")
 
@@ -141,5 +173,8 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
     joblib.dump(clf, out)
     print(f"💾 Saved trained pipeline to: {out}")
 
+# ======================================================
+# 🚀 MAIN ENTRY
+# ======================================================
 if __name__ == "__main__":
     train_and_save()
