@@ -12,6 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import random
 import string
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 SAMPLE_CSV = "data/sample_oral_cancer.csv"
 MODEL_OUT = "model/pipeline.joblib"
@@ -46,7 +48,7 @@ def make_sample_dataset(path, n=1000, random_state=42):
         difficulty_swallowing = random.choice(["yes", "no"])
         oral_condition = random.choice(["good", "moderate", "poor"])
 
-        # ✅ Weighted risk scoring logic for stronger correlations
+        # ✅ Weighted risk scoring logic
         risk_score = 0
         if smoker == "yes": risk_score += 3
         if alcohol == "heavy": risk_score += 3
@@ -60,7 +62,7 @@ def make_sample_dataset(path, n=1000, random_state=42):
         if oral_condition == "poor": risk_score += 3
         if oral_lesions == "yes": risk_score += 2
         if difficulty_swallowing == "yes": risk_score += 1
-        risk_score += random.choice([0, 1])  # small randomness
+        risk_score += random.choice([0, 1])
 
         if risk_score <= 3:
             label = "low"
@@ -91,8 +93,6 @@ def make_sample_dataset(path, n=1000, random_state=42):
         })
 
     df = pd.DataFrame(rows)
-
-    # Add combined lifestyle risk feature (numeric)
     df["lifestyle_risk"] = df.apply(
         lambda row: sum([
             row["smoker"] == "yes",
@@ -160,15 +160,85 @@ def train_and_save(path=SAMPLE_CSV, out=MODEL_OUT):
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
 
-    # Evaluation
     print("\n📊 Evaluation on test set:")
     print(classification_report(y_test, y_pred))
     print("Confusion matrix:")
     print(confusion_matrix(y_test, y_pred))
-
     acc = accuracy_score(y_test, y_pred)
     print(f"✅ Model Accuracy: {acc * 100:.2f}%")
 
+    # Confusion Matrix
+    cm = confusion_matrix(y_test, y_pred, labels=clf.classes_)
+    plt.figure(figsize=(6, 5))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=clf.classes_, yticklabels=clf.classes_)
+    plt.title("Confusion Matrix - Oral Cancer Risk Prediction")
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.tight_layout()
+    os.makedirs("static", exist_ok=True)
+    plt.savefig("static/confusion_matrix.png")
+    plt.close()
+    print("✅ Confusion matrix saved as static/confusion_matrix.png")
+
+    # Loss vs Epochs
+    epochs = np.arange(1, 21)
+    loss = np.exp(-epochs / 5) + np.random.normal(0, 0.02, size=epochs.shape)
+    plt.figure(figsize=(6, 4))
+    plt.plot(epochs, loss, marker='o')
+    plt.title("Loss vs Epochs (Simulated)")
+    plt.xlabel("Epochs")
+    plt.ylabel("Loss")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("static/loss_vs_epochs.png")
+    plt.close()
+    print("✅ Loss vs Epochs graph saved as static/loss_vs_epochs.png")
+
+    # Accuracy vs Epochs
+    accuracy = 0.6 + 0.4 * (1 - np.exp(-epochs / 4)) + np.random.normal(0, 0.01, size=epochs.shape)
+    plt.figure(figsize=(6, 4))
+    plt.plot(epochs, accuracy, color='green', marker='o')
+    plt.title("Accuracy vs Epochs (Simulated)")
+    plt.xlabel("Epochs")
+    plt.ylabel("Accuracy")
+    plt.ylim(0.5, 1.0)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("static/accuracy_vs_epochs.png")
+    plt.close()
+    print("✅ Accuracy vs Epochs graph saved as static/accuracy_vs_epochs.png")
+
+    # =====================================
+    # 📋 Epoch Metrics Table Visualization
+    # =====================================
+    np.random.seed(42)
+    epochs = np.arange(1, 11)
+    acc = 0.7 + 0.03 * np.arange(10) + np.random.normal(0, 0.005, 10)
+    precision = 0.68 + 0.03 * np.arange(10) + np.random.normal(0, 0.006, 10)
+    recall = 0.66 + 0.035 * np.arange(10) + np.random.normal(0, 0.005, 10)
+    f1 = (2 * precision * recall) / (precision + recall)
+
+    metrics_df = pd.DataFrame({
+        "Epoch": epochs,
+        "Accuracy": acc.round(3),
+        "Precision": precision.round(3),
+        "Recall": recall.round(3),
+        "F1-Score": f1.round(3)
+    })
+
+    fig, ax = plt.subplots(figsize=(7, 2.8))
+    ax.axis('off')
+    tbl = ax.table(cellText=metrics_df.values, colLabels=metrics_df.columns, cellLoc='center', loc='center')
+    tbl.auto_set_font_size(False)
+    tbl.set_fontsize(10)
+    tbl.scale(1.1, 1.3)
+    plt.title("Model Performance Metrics per Epoch (Simulated)", fontsize=12, pad=10)
+    plt.tight_layout()
+    plt.savefig("static/epoch_metrics_table.png", bbox_inches='tight')
+    plt.close()
+    print("✅ Epoch metrics table saved as static/epoch_metrics_table.png")
+
+    # Save model
     os.makedirs(os.path.dirname(out), exist_ok=True)
     joblib.dump(clf, out)
     print(f"💾 Saved trained pipeline to: {out}")
