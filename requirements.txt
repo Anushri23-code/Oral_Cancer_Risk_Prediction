@@ -5,3 +5,4 @@ numpy
 joblib
 sqlalchemy
 nltk
+gunicorn
