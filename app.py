@@ -9,7 +9,8 @@ import csv
 # Initialize Flask app
 # -----------------------
 app = Flask(__name__)
-app.secret_key = "supersecretkey"  # Needed for session management
+app.secret_key = os.environ.get("SECRET_KEY", "supersecretkey")
+
 
 # -----------------------
 # Users CSV for persistent login
