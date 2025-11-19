@@ -1,6 +1,6 @@
 Project Overview
 
-This project is a web-based application that predicts the risk of oral cancer based on user inputs including personal, lifestyle, and oral health-related factors. The application uses a machine learning model (Logistic Regression) trained on a text and tabular dataset to provide risk prediction as Low, Medium, or High.
+This project is a web-based application that predicts the risk of oral cancer based on user inputs including personal, lifestyle, and oral health-related factors. The application uses a machine learning model (Random Forest) trained on a text and tabular dataset to provide risk prediction as Low, Medium, or High.
 
 The system also maintains a history of all predictions for review and analysis.
 
@@ -28,7 +28,7 @@ Preprocesses data automatically using a scikit-learn pipeline.
 
 Extracts features from numeric, categorical, and textual input.
 
-Predicts risk level using Logistic Regression.
+Predicts risk level using Random Forest Classifier.
 
 Stores all predictions in data/predictions.csv.
 
@@ -86,6 +86,9 @@ Open your browser and go to:
 
 http://127.0.0.1:5000/
 
+Live link:
+https://oral-cancer-risk-prediction1.onrender.com/
+
 
 Steps in the application:
 
@@ -103,7 +106,7 @@ Process Data: The app collects user input and converts it into a structured form
 
 Extract Features: The ML pipeline preprocesses numeric, categorical, and text features.
 
-Predict Risk: Logistic Regression predicts the probability for low, medium, or high risk.
+Predict Risk: Random Forest predicts the probability for low, medium, or high risk.
 
 Store Result: Each prediction is saved in predictions.csv with timestamp and user details.
 
@@ -111,7 +114,7 @@ Generate & Display Result: Flask renders result.html to show the prediction to t
 
 ML Model Used
 
-Model: Logistic Regression (sklearn.linear_model.LogisticRegression)
+Model: Random Forest (sklearn.linear_model.Random_Forest)
 
 Pipeline: Includes preprocessing (encoding, vectorization) + classifier.
 
