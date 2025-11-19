@@ -4,6 +4,7 @@ import joblib
 import os
 from datetime import datetime
 import csv
+from keep_alive import start_keep_alive
 
 # -----------------------
 # Initialize Flask app
